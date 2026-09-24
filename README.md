@@ -2,8 +2,8 @@
 
 > **【癲癇 RAG 題庫 · 醫師人工評分操作指南】**
 >
-> 1. **開啟網頁**：請直接以瀏覽器（Chrome / Edge / Safari）開啟 https://melodyliuu.github.io/rag-evaluation-review/
-> 2. **填寫身分**：左上方請先填入您的 **「審查醫師姓名或代號」**。
+> 1. **開啟網頁**：使用電腦以瀏覽器（Chrome / Edge / Safari）開啟 https://melodyliuu.github.io/rag-evaluation-review/
+> 2. **填寫身分**：左上方請先填入您的 **「審查醫師姓名」**。
 > 3. **逐題評分**：
 >    - 閱讀問題、標準參考答案與檢索證據。
 >    - 點選各維度的 **0 / 1 / 2 分**（按鈕下方皆有具體評分定義可供對照）。
