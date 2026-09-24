@@ -1,9 +1,0 @@
-__pycache__/
-*.py[cod]
-.venv/
-node_modules/
-.env
-.env.*
-.DS_Store
-playwright-report/
-test-results/
