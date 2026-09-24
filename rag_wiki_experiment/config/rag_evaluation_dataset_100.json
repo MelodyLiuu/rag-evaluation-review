@@ -1,0 +1,1427 @@
+[
+  {
+    "id": 1,
+    "type": "factual",
+    "question": "ILAE 2017年提出的癲癇分類框架包含哪三個層次？",
+    "answerable": true,
+    "reference_answer": "根據《2025癲癇診療指引-第七版》，ILAE 2017年提出的癲癇分類框架包含了三個層次：癲癇發作（seizure types）、癲癇（epilepsy types）及癲癇症候群（epilepsy syndromes）。",
+    "evidence": [
+      {
+        "source": "2025癲癇診療指引-第七版 (A5) 全 -網_0.pdf",
+        "location": "第3.1節 癲癇的分類 (p6)",
+        "text": "在 2017 年 ILAE 提出了新的癲癇分類框架（Framework for Epilepsy Classification），此框架包含了三個層次: 癲癇發作（seizure types）、癲癇（epilepsy types）及癲癇症候群（epilepsy syndromes）。"
+      }
+    ],
+    "multi_source": false
+  },
+  {
+    "id": 2,
+    "type": "factual",
+    "question": "持續抽搐型發作超過幾分鐘即定義為持續癲癇發作狀態的臨界時間點 (t1)？",
+    "answerable": true,
+    "reference_answer": "根據《2025癲癇診療指引-第七版》，臨床上持續抽搐型發作超過 5 分鐘（t1），即可視為持續癲癇發作狀態（Status epilepticus）來處理。",
+    "evidence": [
+      {
+        "source": "2025癲癇診療指引-第七版 (A5) 全 -網_0.pdf",
+        "location": "第17.1節 持續癲癇發作狀態定義",
+        "text": "臨床上持續抽搐型發作超過 5 分鐘（t1），即可視為持續癲癇發作狀態來處理，若不積極治療控制，會導致發作繼續進行。"
+      }
+    ],
+    "multi_source": false
+  },
+  {
+    "id": 3,
+    "type": "factual",
+    "question": "缺血性腦中風與出血性腦中風後產生癲癇的比例分別約為多少？",
+    "answerable": true,
+    "reference_answer": "根據《中風後癲癇治療指引》，缺血性腦中風後產生癲癇約為 2-14%；出血性腦中風為 10-20%，蜘蛛膜下腔出血可高達 12-34%。",
+    "evidence": [
+      {
+        "source": "2025癲癇診療指引-第七版 (A5) 全 -網_0.pdf",
+        "location": "第13.4節 中風後癲癇",
+        "text": "缺血性腦中風後產生之癲癇約為2-14%；出血性腦中風為10-20%，蜘蛛膜下腔出血可高達12-34%。"
+      }
+    ],
+    "multi_source": false
+  },
+  {
+    "id": 4,
+    "type": "factual",
+    "question": "適用於缺血性腦中風後癲癇預測的 SeLECT 量表包含哪些項目？",
+    "answerable": true,
+    "reference_answer": "SeLECT 量表包含：Severity of stroke (NIHSS score)、Large-artery atherosclerotic etiology、Early seizures、Cortical involvement、以及 Territory of middle cerebral artery。",
+    "evidence": [
+      {
+        "source": "2025癲癇診療指引-第七版 (A5) 全 -網_0.pdf",
+        "location": "第13.6節 中風後癲癇預測量表",
+        "text": "適用於缺血性腦中風的 SeLECT 量表（Severity of stroke (NIHSS score)；Large-artery aterhoscerotic etiology；Early seizures；Cortical involvement and Territory of middle cerebral artery）。"
+      }
+    ],
+    "multi_source": false
+  },
+  {
+    "id": 5,
+    "type": "factual",
+    "question": "Levetiracetam 常見的神經性不良反應有哪些？",
+    "answerable": true,
+    "reference_answer": "Levetiracetam 常見的神經性不良反應為嗜睡、頭暈、煩躁、焦慮與憂鬱等症狀。",
+    "evidence": [
+      {
+        "source": "常用癲癇藥物手冊-低檔-網_0.pdf",
+        "location": "Levetiracetam 副作用章節",
+        "text": "常見神經性不良反應為嗜睡、頭暈、煩躁、焦慮與憂鬱等症狀。"
+      }
+    ],
+    "multi_source": false
+  },
+  {
+    "id": 6,
+    "type": "factual",
+    "question": "國際 10-20 系統中，電極名稱 Fp、F、C、P、O、T、A 分別代表什麼部位？",
+    "answerable": true,
+    "reference_answer": "Fp 代表 frontal polar（額極）、F 代表 frontal lobe（額葉）、C 代表 central area（中央）、P 代表 parietal lobe（頂葉）、O 代表 occipital lobe（枕葉）、T 代表 temporal lobe（顳葉）、A 代表 auricular（耳）。",
+    "evidence": [
+      {
+        "source": "腦電圖指引-第四版 (A5) 全224p_含封_0.pdf",
+        "location": "第4.2.1節 國際 10-20 系統",
+        "text": "Fp 代表 frontal polar （額極）、F 代表 frontal lobe （額葉）、C 代表 central area （中央）、P 代表 parietal lobe （頂葉）、O 代表 occipital lobe （枕葉）、T 代表 temporal lobe （顳葉）、A 代表 auricular （耳）。"
+      }
+    ],
+    "multi_source": false
+  },
+  {
+    "id": 7,
+    "type": "factual",
+    "question": "英文術語 'Status Epilepticus' 在 2011 年協議中的兩岸共識譯名為何？",
+    "answerable": true,
+    "reference_answer": "在 2011 年協議中，台灣譯為「持續癲癇發作狀態」，大陸譯為「癲癇持續狀態」。",
+    "evidence": [
+      {
+        "source": "癲癇學和腦電圖學名詞中文標準譯法協議手冊( 72頁A5  )-書--正確_0417_0.pdf",
+        "location": "協議附件 14號名詞",
+        "text": "Status Epilepticus: 台灣2011年譯名為『持續癲癇發作狀態』，大陸2011年譯名為『癲癇持續狀態』。"
+      }
+    ],
+    "multi_source": false
+  },
+  {
+    "id": 8,
+    "type": "factual",
+    "question": "用於新生兒癲癇以及小於兩歲全身或部分癲癇發作的第一線治療藥物為何？",
+    "answerable": true,
+    "reference_answer": "Phenobarbital 應為第一線治療藥物，尤其在於新生兒癲癇，小於兩歲的全身或部分癲癇發作或嬰兒期的癲癇重積。",
+    "evidence": [
+      {
+        "source": "兒童癲癇診療指引-第二版 (A5) 全 (84頁)_含封_0.pdf",
+        "location": "第4.3.1節 藥物治療",
+        "text": "Phenobarbital 應為第一線治療藥物，尤其在於新生兒癲癇，小於兩歲的全身或部分癲癇發作或嬰兒期的癲癇重積(infant status epilepticus)。"
+      }
+    ],
+    "multi_source": false
+  },
+  {
+    "id": 9,
+    "type": "factual",
+    "question": "持續抽搐發作超過 30 分鐘（t2）以上會導致什麼後果？此階段稱作什麼？",
+    "answerable": true,
+    "reference_answer": "若發作持續抽搐 30 分鐘（t2）以上，會導致長期後遺症（包括神經元死亡、神經元損傷或神經網路改變）。無法經前述 Benzodiazepines 與 ASM 注射控制而超過 30 分鐘以上的階段稱為「頑固型持續癲癇發作狀態（Refractory status epilepticus, Stage III）」。",
+    "evidence": [
+      {
+        "source": "2025癲癇診療指引-第七版 (A5) 全 -網_0.pdf",
+        "location": "第17.1與17.4.2節",
+        "text": "若發作持續抽搐 30 分鐘（t2）以上，則會導致長期後遺症。超過 30 分鐘以上：藥物不反應之頑固型持續癲癇發作狀態（refractory status epilepticus）。"
+      }
+    ],
+    "multi_source": false
+  },
+  {
+    "id": 10,
+    "type": "factual",
+    "question": "哪些抗癲癇藥物體內代謝清除途徑為 100% 由腎臟（Renal）排泄？",
+    "answerable": true,
+    "reference_answer": "根據文件，Gabapentin、Levetiracetam 與 Vigabatrin 的代謝清除途徑為 100% 由腎臟（Renal）排泄。",
+    "evidence": [
+      {
+        "source": "中風後癲癇治療指引(A5)_OK (48頁)_0.pdf",
+        "location": "表6. Drug Elimination Route",
+        "text": "Gabapentin: Renal 100%, Liver 0%; Levetiracetam: Renal 100%, Liver 0%; Vigabatrin: Renal 100%, Liver 0%。"
+      }
+    ],
+    "multi_source": false
+  },
+  {
+    "id": 11,
+    "type": "factual",
+    "question": "發生遲發性中風後發作（Late-onset seizure）後，再發生第二次發作的機率介於多少？",
+    "answerable": true,
+    "reference_answer": "文獻中關於發生遲發性發作後再發生第二次發作的機會介於 54% 至 66% 之間；而早發性發作後再度發作的機會則都小於 43%。",
+    "evidence": [
+      {
+        "source": "中風後癲癇治療指引(A5)_OK (48頁)_0.pdf",
+        "location": "第7.2.2節 使用抗癲癇藥物時機",
+        "text": "文獻中關於發生遲發性發作後再發生第二次發作的機會介於 54% 至 66%之間；而早發性發作後再度發作的機會則都小於 43%。"
+      }
+    ],
+    "multi_source": false
+  },
+  {
+    "id": 12,
+    "type": "factual",
+    "question": "2017 年更新的標準國際 10-20 系統新增了哪六個電極配置？",
+    "answerable": true,
+    "reference_answer": "新增了 T9/T10、F9/F10、P9/P10 共六個電極配置，以涵蓋下及前腦區（inferior and anterior brain regions / inferior temporal chain）。",
+    "evidence": [
+      {
+        "source": "腦電圖指引-第四版 (A5) 全224p_含封_0.pdf",
+        "location": "第4.6.2節 2017年更新標準國際10-20系統",
+        "text": "增加 T9/T10 (T7/T8 下方 10%)，F9/F10 (F7/F8 下方 10%或是 T9/T10 前方 20%)，P9/P10 (P7/P8 下方 10%或是 T9/T10 後方 20%)。"
+      }
+    ],
+    "multi_source": false
+  },
+  {
+    "id": 13,
+    "type": "factual",
+    "question": "癲癇緩解（Resolved）需符合哪些條件之一？",
+    "answerable": true,
+    "reference_answer": "癲癇緩解須符合以下條件之一：（1）病人的癲癇症候群與年齡有關，且病人已經過了該症候群癲癇性發作的年紀；（2）病人已逾 10 年沒有癲癇性發作，且最後 5 年沒有服用癲癇藥物。",
+    "evidence": [
+      {
+        "source": "2025癲癇診療指引-第七版 (A5) 全 -網_0.pdf",
+        "location": "第2.5節 癲癇緩解",
+        "text": "（1）病人的癲癇症候群與年齡有關，且病人已經過了該症候群癲癇性發作的年紀。（2）病人已逾 10 年沒有癲癇性發作，且最後 5 年沒有服用癲癇藥物。"
+      }
+    ],
+    "multi_source": false
+  },
+  {
+    "id": 14,
+    "type": "factual",
+    "question": "由結節性硬化症（Tuberous sclerosis）引起的嬰兒點頭痙攣（Infantile spasms），第一線首選藥物為何？",
+    "answerable": true,
+    "reference_answer": "若 Infantile spasms 是由 Tuberous sclerosis 引起，第一線首選藥物為 Vigabatrin。",
+    "evidence": [
+      {
+        "source": "兒童癲癇診療指引-第二版 (A5) 全 (84頁)_含封_0.pdf",
+        "location": "第4.3.3節 藥物治療",
+        "text": "若 infantile spasms 是由 tuberous sclerosis 引起，第一線可考慮藥物為 vigabatrin。"
+      }
+    ],
+    "multi_source": false
+  },
+  {
+    "id": 15,
+    "type": "factual",
+    "question": "舊型具肝臟代謝酵素誘導作用的抗癲癇藥物（ASM）有哪些？它們會對 Warfarin 產生什麼影響？",
+    "answerable": true,
+    "reference_answer": "舊型具肝臟代謝酵素誘導作用的 ASM 包括 Phenytoin、Carbamazepine、Phenobarbital 及 Primidone。它們均可能降低傳統口服抗凝血藥物 Warfarin 的血中濃度。",
+    "evidence": [
+      {
+        "source": "2025癲癇診療指引-第七版 (A5) 全 -網_0.pdf",
+        "location": "第13.8節 中風後癲癇藥物交互作用",
+        "text": "舊型具肝臟代謝酵素誘導作用的ASM（Phenytoin、Carbamazepine、Phenobarbital and Primidone）均可能降低傳統口服抗凝血藥物Warfarin濃度。"
+      }
+    ],
+    "multi_source": false
+  },
+  {
+    "id": 16,
+    "type": "factual",
+    "question": "Carbamazepine 造成 Stevens-Johnson 症候群 (SJS) 在亞洲人主要與哪個基因相關？",
+    "answerable": true,
+    "reference_answer": "Carbamazepine 造成 Stevens-Johnson 症候群 (SJS) 在亞洲人大部分與 HLA-B*1502 基因相關。",
+    "evidence": [
+      {
+        "source": "兒童癲癇診療指引-第二版 (A5) 全 (84頁)_含封_0.pdf",
+        "location": "第4.2.3節 嚴重毒性",
+        "text": "carbamazepine 造成 Stevens-Johnson 症候群 (在亞洲人大部分與 HLA-B*1502 有相關)。"
+      }
+    ],
+    "multi_source": false
+  },
+  {
+    "id": 17,
+    "type": "factual",
+    "question": "英文術語 'Hypsarrhythmia' 在 2011 年台灣與大陸的譯名為何？",
+    "answerable": true,
+    "reference_answer": "Hypsarrhythmia 的 2011 年譯名，台灣譯為「高度失律」，大陸譯為「高幅失律」。",
+    "evidence": [
+      {
+        "source": "癲癇學和腦電圖學名詞中文標準譯法協議手冊( 72頁A5  )-書--正確_0417_0.pdf",
+        "location": "協議附件 107號名詞",
+        "text": "Hypsarrhythmia: 台灣2011年譯名為『高度失律』，大陸2011年譯名為『高幅失律』。"
+      }
+    ],
+    "multi_source": false
+  },
+  {
+    "id": 18,
+    "type": "factual",
+    "question": "腦電圖做過度換氣（Hyperventilation）誘發測試時，最常見誘發出現的波形變化是什麼？",
+    "answerable": true,
+    "reference_answer": "過度換氣常見會誘發瀰漫性慢波活動（diffuse slow activity / generalized rhythmic sharp theta/delta transient），振幅大小常與年紀、低血糖及過度換氣努力程度相關。",
+    "evidence": [
+      {
+        "source": "腦電圖指引-第四版 (A5) 全224p_含封_0.pdf",
+        "location": "過度換氣範例圖說 (p76, p78)",
+        "text": "過度換氣後誘發 5 Hz bilateral generalized rhythmic sharp theta transient，振幅大小與年紀、低血糖及過度換氣努力程度相關。"
+      }
+    ],
+    "multi_source": false
+  },
+  {
+    "id": 19,
+    "type": "factual",
+    "question": "Super-refractory status epilepticus 的定義為何？其死亡率約多少？",
+    "answerable": true,
+    "reference_answer": "Super-refractory status epilepticus 指在使用全身性麻醉藥物後，仍有連續或反覆癲癇發作超過 24 小時（或停用麻醉藥後復發），死亡率高達 30%-50%。",
+    "evidence": [
+      {
+        "source": "2025癲癇診療指引-第七版 (A5) 全 -網_0.pdf",
+        "location": "第17.4.2 (4)節",
+        "text": "Super-refractory status epilepticus：指在使用全身性麻醉藥物後，仍有連續或反覆癲癇發作超過 24 小時，死亡率高達 30%-50%。"
+      }
+    ],
+    "multi_source": false
+  },
+  {
+    "id": 20,
+    "type": "factual",
+    "question": "複雜性熱性痙攣（Complex febrile seizures）包含哪些特徵？",
+    "answerable": true,
+    "reference_answer": "複雜性熱性痙攣包括：（1）局部性發作；（2）過長的發作時間；（3）24小時內二次以上發作。",
+    "evidence": [
+      {
+        "source": "兒童癲癇診療指引-第二版 (A5) 全 (84頁)_含封_0.pdf",
+        "location": "第5.8.5節 複雜性熱性痙攣",
+        "text": "複雜性熱性痙攣包括的：（1）局部性發作；( 2）過長的發作時間；（3）二次以上發作。"
+      }
+    ],
+    "multi_source": false
+  },
+  {
+    "id": 21,
+    "type": "factual",
+    "question": "適用於出血性腦中風後癲癇預測的 CAVE 量表包含哪些因子？",
+    "answerable": true,
+    "reference_answer": "CAVE 量表包含：Cortical location、younger Age、large hemorrhage Volume、以及 acute symptomatic sEizure。",
+    "evidence": [
+      {
+        "source": "2025癲癇診療指引-第七版 (A5) 全 -網_0.pdf",
+        "location": "第13.6節 中風後癲癇預測量表",
+        "text": "適用於出血性腦中風的 CAVE 量表（Cortical location；younger Age；large hemorrhage Volume and acute symptomatic sEizure）。"
+      }
+    ],
+    "multi_source": false
+  },
+  {
+    "id": 22,
+    "type": "factual",
+    "question": "Lamotrigine 與 Valproate 併用時，劑量應如何調整？原因為何？",
+    "answerable": true,
+    "reference_answer": "兩者併用時（尤其初次使用），Lamotrigine 的劑量宜減半。原因為 Valproate 會抑制 Lamotrigine 代謝而增加皮膚過敏（如 SJS/TEN）的風險。",
+    "evidence": [
+      {
+        "source": "中風後癲癇治療指引(A5)_OK (48頁)_0.pdf",
+        "location": "第8章 藥物手冊表說明",
+        "text": "與 Valproate 併用時，因 Valproate 抑制 Lamotrigine 代謝而增加皮膚過敏的風險，因此兩者併用時（尤其初次使用），Lamotrigine 的劑量宜減半。"
+      }
+    ],
+    "multi_source": false
+  },
+  {
+    "id": 23,
+    "type": "factual",
+    "question": "K-complexes 通常出現在睡眠的哪一個階段？由什麼波形構成？",
+    "answerable": true,
+    "reference_answer": "K-complexes 出現在非快速動眼睡眠第二期（NREM stage 2），由 13-14 Hz 中央額葉紡錘波疊加上兩相大振幅慢波構成。",
+    "evidence": [
+      {
+        "source": "腦電圖指引-第四版 (A5) 全224p_含封_0.pdf",
+        "location": "K-complexes 範例圖說 (p77)",
+        "text": "由 13-14 Hz 中央額葉紡錘波疊加上兩相大振幅慢波構成 K 複合物，在非快速動眼睡眠第二期時出現。"
+      }
+    ],
+    "multi_source": false
+  },
+  {
+    "id": 24,
+    "type": "factual",
+    "question": "通則中對於英文單字 Seizure、Convulsion、Spasm、Myoclonus 的共識譯名分別為何？",
+    "answerable": true,
+    "reference_answer": "Seizure 翻譯為「發作」；Convulsion 翻譯為「抽搐」；Spasm 翻譯為「痙攣」；Myoclonus 翻譯為「肌陣攣」。",
+    "evidence": [
+      {
+        "source": "癲癇學和腦電圖學名詞中文標準譯法協議手冊( 72頁A5  )-書--正確_0417_0.pdf",
+        "location": "訂定癲癇中文名詞的基本通則 第4點",
+        "text": "seizure 翻譯為“發作”;convulsion 翻譯為“抽搐”；spasm 翻譯為“痙攣”;myoclonus 翻譯為“肌陣攣”。"
+      }
+    ],
+    "multi_source": false
+  },
+  {
+    "id": 25,
+    "type": "factual",
+    "question": "使用麻醉性藥物控制頑固型持續癲癇時，腦電圖監測建議達到什麼狀態？",
+    "answerable": true,
+    "reference_answer": "腦電圖監測建議達到腦部活動進入「猝發-壓抑（burst-suppression）」的狀態，並維持 24 小時。",
+    "evidence": [
+      {
+        "source": "2025癲癇診療指引-第七版 (A5) 全 -網_0.pdf",
+        "location": "第17.4.3 (1)節",
+        "text": "腦電圖監測：達到腦部活動進入猝發-壓抑（burst-suppression）的狀態並維持 24 小時為一般建議的目標。"
+      }
+    ],
+    "multi_source": false
+  },
+  {
+    "id": 26,
+    "type": "natural_query",
+    "question": "阿嬤最近中風後有抽搐發作，隔了幾個月又發作一次，醫生說這叫遲發性發作，請問這種情況之後再發作的機會高嗎？",
+    "answerable": true,
+    "reference_answer": "是的，再發作機率相當高。根據文件，遲發性中風後發作在發生第一次後，再次發作的機會高達 54% 至 66%，且根據 ILAE 定義，單一次遲發性發作未來 10 年復發率大於 60%，因此建議給予抗癲癇藥物長期治療。",
+    "evidence": [
+      {
+        "source": "中風後癲癇治療指引(A5)_OK (48頁)_0.pdf",
+        "location": "第7.2.2節 與 2025指引 13.2節",
+        "text": "遲發性發作後再發生第二次發作的機會介於 54% 至 66%之間；單一次的遲發性癲癇發作由於在未來十年內有相當高的機會（> 60%）有復發的可能，可視為癲癇，應給予 ASM 治療。"
+      }
+    ],
+    "multi_source": true
+  },
+  {
+    "id": 27,
+    "type": "natural_query",
+    "question": "我家小朋友被診斷出兒童失神癲癇，醫生準備開藥，請問失神發作首選的藥物有哪些？",
+    "answerable": true,
+    "reference_answer": "根據《兒童癲癇診療指引》，兒童失神型發作的第一選擇（首選）藥物為 Ethosuximide、Valproate（丙戊酸）及 Lamotrigine。",
+    "evidence": [
+      {
+        "source": "兒童癲癇診療指引-第二版 (A5) 全 (84頁)_含封_0.pdf",
+        "location": "第4.5.2 (1)節 兒童失神型發作",
+        "text": "兒童失神型發作 第一選擇：ethosuximide, valproate, lamotrigine。"
+      }
+    ],
+    "multi_source": false
+  },
+  {
+    "id": 28,
+    "type": "natural_query",
+    "question": "鄰居小孩發燒抽搐被帶去急診，醫生說是單純性熱性痙攣，請問這種熱性痙攣長大後變癲癇的機會高嗎？會影響智商嗎？",
+    "answerable": true,
+    "reference_answer": "根據文件，不論是單純性或複雜性熱性痙攣，病童長期追蹤的智商及其他腦神經發展並沒有差異；只有一次單純性熱性痙攣的小孩長大後發生癲癇的機會，僅比一般沒有熱性痙攣的小孩只多一點點。",
+    "evidence": [
+      {
+        "source": "兒童癲癇診療指引-第二版 (A5) 全 (84頁)_含封_0.pdf",
+        "location": "第5.8.3與5.8.4節 熱性痙攣預後",
+        "text": "病童長期追蹤的智商及其他腦神經的發展並沒有差異。若是只有一次的單純性熱性痙攣，發生癲癇的機會比沒有熱性痙攣的小孩只多一點點。"
+      }
+    ],
+    "multi_source": false
+  },
+  {
+    "id": 29,
+    "type": "natural_query",
+    "question": "我服用了 Levetiracetam（Keppra），最近家人覺得我變得很暴躁易怒、心情不好，這可能是藥物引起的副作用嗎？",
+    "answerable": true,
+    "reference_answer": "是的。根據藥物手冊與診療指引，Levetiracetam 常見的神經精神副作用包括煩躁、焦慮、憂鬱、易怒及攻擊性等行為異常與情緒變化，臨床上應密切監測。",
+    "evidence": [
+      {
+        "source": "常用癲癇藥物手冊-低檔-網_0.pdf",
+        "location": "Levetiracetam 注意事項與副作用",
+        "text": "Levetiracetam可能會引起精神病症狀及行為異常，包括易怒及攻擊性。常見神經性不良反應為嗜睡、頭暈、煩躁、焦慮與憂鬱等症狀。"
+      }
+    ],
+    "multi_source": false
+  },
+  {
+    "id": 30,
+    "type": "natural_query",
+    "question": "我看到阿公做腦波檢查報告寫著出現 'Wicket spikes'，這代表阿公一定有癲癇嗎？",
+    "answerable": true,
+    "reference_answer": "不一定。根據《腦電圖指引》，Wicket spikes（柵欄狀棘波）屬於良性腦波變異（Benign variants），常出現在中老年人的嗜睡或睡眠期（例如常見於顳葉區），並不等於病理性癲癇放電，不代表直接診斷為癲癇。",
+    "evidence": [
+      {
+        "source": "腦電圖指引-第四版 (A5) 全224p_含封_0.pdf",
+        "location": "Wicket spikes 圖說 (p78) 與 2025指引 局限性說明",
+        "text": "72 歲女性有失智症病史，腦電圖顯示在左側顳葉區有 wicket spikes。正常人群中有時會出現良性腦波變異（如 Wicket spikes），不等於癲癇發作。"
+      }
+    ],
+    "multi_source": true
+  },
+  {
+    "id": 31,
+    "type": "natural_query",
+    "question": "我家人中風後吃 Warfarin 預防血栓，現在如果要加吃抗癲癇藥，舊型的 Phenytoin 會影響 Warfarin 濃度嗎？",
+    "answerable": true,
+    "reference_answer": "會的。根據文件，Phenytoin 屬於舊型具肝臟代謝酵素誘導作用的抗癲癇藥物，與 Warfarin 有明顯交互作用，會降低 Warfarin 的血中濃度，導致難以維持兩種藥物的目標治療濃度與抗凝血效果。",
+    "evidence": [
+      {
+        "source": "2025癲癇診療指引-第七版 (A5) 全 -網_0.pdf",
+        "location": "第13.8節 與 中風指引 7.3.4節",
+        "text": "舊型具肝臟代謝酵素誘導作用的ASM（Phenytoin等）均可能降低傳統口服抗凝血藥物Warfarin濃度。Warfarin 和 Phenytoin 有明顯的交互作用導致很難持續維持兩種藥物的治療濃度。"
+      }
+    ],
+    "multi_source": true
+  },
+  {
+    "id": 32,
+    "type": "natural_query",
+    "question": "帶小朋友做腦電圖檢查時，醫檢師叫小朋友用力快速呼吸（過度換氣），請問這是為了看什麼反應？",
+    "answerable": true,
+    "reference_answer": "過度換氣（Hyperventilation）是腦電圖常規的誘發測試之一，主要用來誘發大腦產生慢波活動（如 generalized rhythmic sharp theta/delta activity），特別容易誘發出失神發作（Absence seizures）或異常癲癇樣放電。",
+    "evidence": [
+      {
+        "source": "腦電圖指引-第四版 (A5) 全224p_含封_0.pdf",
+        "location": "過度換氣測試章節",
+        "text": "過度換氣後誘發 5 Hz bilateral generalized rhythmic sharp theta transient，為常見的腦波誘發測試。"
+      }
+    ],
+    "multi_source": false
+  },
+  {
+    "id": 33,
+    "type": "natural_query",
+    "question": "小嬰兒發作時全身一直點頭痙攣，檢查發現是結節性硬化症引起的，請問推薦的第一線治療藥物是什麼？",
+    "answerable": true,
+    "reference_answer": "根據《兒童癲癇診療指引》，若嬰兒點頭痙攣（Infantile spasms）是由結節性硬化症（Tuberous sclerosis）所引起，第一線推薦處方藥物為 Vigabatrin。",
+    "evidence": [
+      {
+        "source": "兒童癲癇診療指引-第二版 (A5) 全 (84頁)_含封_0.pdf",
+        "location": "第4.3.3節 藥物治療",
+        "text": "若 infantile spasms 是由 tuberous sclerosis 引起，第一線可考慮藥物為 vigabatrin。"
+      }
+    ],
+    "multi_source": false
+  },
+  {
+    "id": 34,
+    "type": "natural_query",
+    "question": "我家小孩癲癇發作持續抽搐快要 5 分鐘都沒停，送急診後醫師第一階段會先給什麼急救藥物？",
+    "answerable": true,
+    "reference_answer": "發作超過 5 分鐘屬於持續癲癇發作狀態的第一階段（Stage I / Early SE），急診醫師會立即給予 Benzodiazepines 類急救藥物，包括靜脈注射 Lorazepam 或 Diazepam，或是肌肉注射 Midazolam。",
+    "evidence": [
+      {
+        "source": "2025癲癇診療指引-第七版 (A5) 全 -網_0.pdf",
+        "location": "第17.4.2 (1)節 抽搐型持續癲癇發作狀態治療",
+        "text": "持續癲癇發作 30 分鐘以內（早期）：立即給予 Benzodiazepines 類藥物，包括靜脈注射 Lorazepam 或 Diazepam，或肌肉注射 Midazolam。"
+      }
+    ],
+    "multi_source": false
+  },
+  {
+    "id": 35,
+    "type": "natural_query",
+    "question": "聽說有種叫『生酮飲食』的方法可以治療兒童癲癇，請問對於生酮飲食的使用建議是什麼？",
+    "answerable": true,
+    "reference_answer": "根據《兒童癲癇診療指引》，生酮飲食（Ketogenic diet）可在專科醫師的監測與評估下，嘗試使用於難以用藥物控制的「頑固型癲癇（Intractable/Refractory epilepsy）」病童。",
+    "evidence": [
+      {
+        "source": "兒童癲癇診療指引-第二版 (A5) 全 (84頁)_含封_0.pdf",
+        "location": "第4.3.5節 生酮飲食",
+        "text": "生酮飲食(ketogenic diet)可在專科醫師監測下，嘗試使用於頑固型癲癇病童。"
+      }
+    ],
+    "multi_source": false
+  },
+  {
+    "id": 36,
+    "type": "natural_query",
+    "question": "我剛開始服用 Lamotrigine，醫師特別交代要注意有沒有起紅疹，請問這藥物引起的皮膚過敏嚴重嗎？",
+    "answerable": true,
+    "reference_answer": "是的，需要特別注意。Lamotrigine 屬於高皮膚過敏風險的抗癲癇藥物，嚴重時可能引發史蒂文生氏強生症候群（SJS）、毒性表皮壞死溶解症（TEN）或 DRESS 症候群等致命性重度皮膚不良反應。",
+    "evidence": [
+      {
+        "source": "2025癲癇診療指引-第七版 (A5) 全 -網_0.pdf",
+        "location": "表9-2 與 附件副作用表",
+        "text": "Lamotrigine 屬於 High risk 合併皮疹風險藥物，嚴重的罕見副作用包含 SJS、TEN、DRESS。"
+      }
+    ],
+    "multi_source": false
+  },
+  {
+    "id": 37,
+    "type": "natural_query",
+    "question": "阿公中風後一直昏迷不醒，醫師懷疑他有『非抽搐型持續癲癇發作狀態（NCSE）』，請問要怎麼確定？",
+    "answerable": true,
+    "reference_answer": "當中風患者出現無其他合理解釋的持續意識障礙或昏迷時，腦電圖（EEG）是診斷或排除非抽搐型持續癲癇發作狀態（NCSE）唯一且最重要的核心工具。",
+    "evidence": [
+      {
+        "source": "2025癲癇診療指引-第七版 (A5) 全 -網_0.pdf",
+        "location": "第13.7節 與 17.1節",
+        "text": "病人在中風後早期階段，如果沒有恢復意識或是其意識狀態改變沒有找到可以合理解釋的理由時，腦電圖是診斷癲癇發作 Important 工具。"
+      }
+    ],
+    "multi_source": false
+  },
+  {
+    "id": 38,
+    "type": "natural_query",
+    "question": "如果懷疑小嬰兒是因為先天代謝性疾病引起癲癇發作，有哪些抗癲癇藥物是絕對不能使用的？",
+    "answerable": true,
+    "reference_answer": "根據《兒童癲癇診療指引》，若懷疑為代謝疾病（Inborn errors of metabolism）造成癲癇，Valproate（丙戊酸）屬於禁忌使用的藥物（特別在小於2歲且有肝毒性風險者）。",
+    "evidence": [
+      {
+        "source": "兒童癲癇診療指引-第二版 (A5) 全 (84頁)_含封_0.pdf",
+        "location": "第4.3.6節 代謝疾病禁忌",
+        "text": "若懷疑為代謝疾病造成癲癇，valproate 為禁忌使用藥物。"
+      }
+    ],
+    "multi_source": false
+  },
+  {
+    "id": 39,
+    "type": "natural_query",
+    "question": "做腦電圖時頭上貼很多電極，請問 10-20 系統貼電極時，右邊跟左邊的名稱是用什麼數字區分的？",
+    "answerable": true,
+    "reference_answer": "根據《腦電圖指引》，在 10-20 系統中，位於右側的電極一律以偶數（Even numbers，如 F4, C4, O2）標示；部位於左側的電極一律以奇數（Odd numbers，如 F3, C3, O1）標示；正中線上的電極則以字母 'z'（Zero）標示（如 Fz, Cz, Pz）。",
+    "evidence": [
+      {
+        "source": "腦電圖指引-第四版 (A5) 全224p_含封_0.pdf",
+        "location": "第4.2.1節 國際 10-20 系統命名",
+        "text": "右側電極一律以偶數標示，左側電極以奇數標示。Z（z 即 zero；表示 vertex）則代表電極點位於中線上。"
+      }
+    ],
+    "multi_source": false
+  },
+  {
+    "id": 40,
+    "type": "natural_query",
+    "question": "懷孕婦女如果服用 Valproate（丙戊酸）治療癲癇，對肚子裡的胎兒會有什麼風險？",
+    "answerable": true,
+    "reference_answer": "根據指引，Valproate 用於孕婦已知具有較高的先天性異常（Birth defects）、兒童智商（IQ）下降及發展遲緩的風險，因此需特別審慎評估與避免。",
+    "evidence": [
+      {
+        "source": "兒童癲癇診療指引-第二版 (A5) 全 (84頁)_含封_0.pdf",
+        "location": "第4.2.7 (2)節 孕婦用藥風險",
+        "text": "抗癲癇藥物用於孕婦，已知 valproate 及 phenobarbital 有較高之先天性異常、IQ 下降、發展遲緩。"
+      }
+    ],
+    "multi_source": false
+  },
+  {
+    "id": 41,
+    "type": "natural_query",
+    "question": "家人剛發生缺血性腦中風，目前完全沒有抽搐發作過，可以先吃抗癲癇藥來預防以後發生中風後癲癇嗎？",
+    "answerable": true,
+    "reference_answer": "不建議。根據指引證據分析，目前並無足夠證據支持常規預防性使用抗癲癇藥物能有效預防中風後癲癇的發生（證據力未達統計意義），故中風後若未發生發作，不建議預防性給藥。",
+    "evidence": [
+      {
+        "source": "2025癲癇診療指引-第七版 (A5) 全 -網_0.pdf",
+        "location": "第13.10節 與 中風指引 7.7節",
+        "text": "目前並無足夠證據支持常規性使用 ASM 能預防中風後癲癇發作的發生...故如中風後未發生發作則不建議使用抗癲癇藥物。"
+      }
+    ],
+    "multi_source": true
+  },
+  {
+    "id": 42,
+    "type": "natural_query",
+    "question": "腦電圖報告寫說有錄到『睡眠紡錘波（Sleep spindles）』，請問這是在睡眠的哪一個階段出現的正常波形？",
+    "answerable": true,
+    "reference_answer": "睡眠紡錘波（Sleep spindles）通常呈現 13-14 Hz 的 β burst 樣波形，是在「非快速動眼睡眠第二期（NREM sleep stage 2）」出現的正常睡眠腦波特徵。",
+    "evidence": [
+      {
+        "source": "腦電圖指引-第四版 (A5) 全224p_含封_0.pdf",
+        "location": "Sleep spindles 範例圖說 (p77)",
+        "text": "顯示同步的 13-14 Hz β burst 樣的睡眠紡錘波，在非快速動眼睡眠第二期時出現。"
+      }
+    ],
+    "multi_source": false
+  },
+  {
+    "id": 43,
+    "type": "natural_query",
+    "question": "小朋友失神發作（Absence seizure）時，腦電圖檢查通常會看到什麼經典的波形？",
+    "answerable": true,
+    "reference_answer": "失神發作在腦電圖上典型的特徵是雙側對稱同步的「3 Hz 棘慢複合波（3 Hz spike-and-wave complexes）」。",
+    "evidence": [
+      {
+        "source": "2025癲癇診療指引-第七版 (A5) 全 -網_0.pdf",
+        "location": "第5.1節 與 腦電圖指引",
+        "text": "失神發作具特徵性的放電模式（典型的 3Hz 棘慢複合波）。"
+      }
+    ],
+    "multi_source": false
+  },
+  {
+    "id": 44,
+    "type": "natural_query",
+    "question": "如果癲癇患者同時有嚴重的肥胖問題，哪些抗癲癇藥物有減重效果或適合肥胖者？",
+    "answerable": true,
+    "reference_answer": "根據指引，Topiramate 與 Zonisamide 具有減少食慾與減重（Weight loss）的作用，適合合併有肥胖問題的癲癇患者考量使用。",
+    "evidence": [
+      {
+        "source": "兒童癲癇診療指引-第二版 (A5) 全 (84頁)_含封_0.pdf",
+        "location": "第4.2.5 (2)節 併發症狀選藥",
+        "text": "如肥胖者可考慮使用 topiramate, zonisamide。"
+      }
+    ],
+    "multi_source": true
+  },
+  {
+    "id": 45,
+    "type": "natural_query",
+    "question": "醫師提到『持續癲癇發作狀態』的 t1 與 t2 時間點，請問這兩個時間點在臨床處置上代表什麼意義？",
+    "answerable": true,
+    "reference_answer": "t1 代表應開始啟動緊急藥物治療的時間點，以避免發作持續演變成持續狀態；t2 則代表若發作超過此時間點，將會開始產生神經元損傷、神經元死亡及神經網絡改變等不可逆後遺症。",
+    "evidence": [
+      {
+        "source": "2025癲癇診療指引-第七版 (A5) 全 -網_0.pdf",
+        "location": "第17.1與17.4節 持續癲癇狀態定義",
+        "text": "超過一定的時間（t1）該視為發作已經是持續狀態，再進一步超過第二時間點（t2）就有引起神經損傷、神經元死亡、神經網絡改變的後果。實際操作應掌握 t1 為開始緊急治療 SE 的時間。"
+      }
+    ],
+    "multi_source": false
+  },
+  {
+    "id": 46,
+    "type": "comparison",
+    "question": "比較 Gabapentin 與 Carbamazepine 在體內代謝途徑（腎臟與肝臟排泄比例）與副作用差異。",
+    "answerable": true,
+    "reference_answer": "代謝途徑方面：Gabapentin 為 100% 由腎臟排泄、0% 經肝臟代謝；而 Carbamazepine 則為 99% 經肝臟代謝、僅 1% 由腎臟排泄。副作用方面：Gabapentin 主要為嗜睡、疲勞、頭暈與肢體水腫；Carbamazepine 則常見頭暈、複視、低血鈉，且具有引發嚴重皮膚過敏（SJS/TEN）的高風險及顯著的肝藥酵素誘導交互作用。",
+    "evidence": [
+      {
+        "source": "中風後癲癇治療指引(A5)_OK (48頁)_0.pdf",
+        "location": "表6. Drug Elimination Route (p34)",
+        "text": "Gabapentin: Renal 100%, Liver 0%; Carbamazepine: Renal 1%, Liver 99%。"
+      },
+      {
+        "source": "2025癲癇診療指引-第七版 (A5) 全 -網_0.pdf",
+        "location": "附件C 藥物限制與副作用",
+        "text": "Carbamazepine 有 SJS/TEN 風險、低血鈉及肝酵素誘導；Gabapentin 無肝毒性，常見腳水腫與嗜睡。"
+      }
+    ],
+    "multi_source": true
+  },
+  {
+    "id": 47,
+    "type": "comparison",
+    "question": "比較早發性中風後發作（Early-onset seizure）與遲發性中風後發作（Late-onset seizure）在發生時間、致病機轉與長期復發風險上的異同。",
+    "answerable": true,
+    "reference_answer": "發生時間：早發性發作發生於中風後早期（如7天內）；遲發性發作則發生於中風數週或數月之後。致病機轉：早發性發作是腦細胞對缺血缺氧等急性腦傷的反應（如麩胺酸興奮毒性、細胞外鉀離子升高）；遲發性發作則反映腦組織結構改變與膠質斑痕、神經網絡重組。復發風險與治療：早發性發作再發率較低（<43%），不一定需要長期吃藥；遲發性發作復發率高（54%-66%），被定義為癲癇，需長期服藥。",
+    "evidence": [
+      {
+        "source": "2025癲癇診療指引-第七版 (A5) 全 -網_0.pdf",
+        "location": "第13.2、13.3節 與 中風指引 7.2.2節",
+        "text": "早發性癲癇發作為腦細胞對急性腦血管損傷的反應；遲發性則反映腦血管病變後造成腦部損傷所產生的神經網絡結構變化。早發性再發率<43%，遲發性再發率54%-66%。"
+      }
+    ],
+    "multi_source": true
+  },
+  {
+    "id": 48,
+    "type": "comparison",
+    "question": "比較 Levetiracetam 與 Sustained-release Carbamazepine 在治療遲發性中風後癲癇時，療效與副作用（特別是認知功能）的比較。",
+    "answerable": true,
+    "reference_answer": "前瞻性隨機試驗顯示，兩者在治療遲發性中風後癲癇的成效相當；但在副作用方面，使用 Levetiracetam 組有明顯較低的副作用，特別是在對「認知功能（Cognitive function）」的影響上，Levetiracetam 的耐受性顯著優於 Carbamazepine。",
+    "evidence": [
+      {
+        "source": "中風後癲癇治療指引(A5)_OK (48頁)_0.pdf",
+        "location": "第7.3.6節 抗癲癇藥物選擇",
+        "text": "兩組在治療成效上相當，但使用 Levetiracetam 組有明顯較低的副作用，尤其是針對認知功能方面。"
+      }
+    ],
+    "multi_source": false
+  },
+  {
+    "id": 49,
+    "type": "comparison",
+    "question": "比較 Phenytoin 與 Levetiracetam 在器官代謝途徑及急診靜脈注射（IV）處置時的注意事項異同。",
+    "answerable": true,
+    "reference_answer": "器官代謝：Phenytoin 95% 經肝臟代謝（僅 5% 經腎臟）；Levetiracetam 則 100% 由腎臟排泄，無肝毒性。急診靜脈注射注意事項：Phenytoin 須注意給藥速度（<50mg/min），否則可能造成嚴重低血壓、心律不整及 SJS 過敏；Levetiracetam 靜脈注射耐受性高且安全性佳，但腎功能障礙者（如 CrCl < 70 ml/min）需依腎功能調整劑量。",
+    "evidence": [
+      {
+        "source": "中風後癲癇治療指引(A5)_OK (48頁)_0.pdf",
+        "location": "表6與第7.4.3節",
+        "text": "Phenytoin 95% 經肝代謝，注意給藥速度及心律不整/SJS；Levetiracetam 100% 腎排泄，肌氮酸清除率<70ml/min建議劑量減半。"
+      }
+    ],
+    "multi_source": true
+  },
+  {
+    "id": 50,
+    "type": "comparison",
+    "question": "比較 Valproic acid (VPA) 與 Lamotrigine (LTG) 在治療原發性全身型發作的療效、皮膚過敏風險及相互作用上的異同。",
+    "answerable": true,
+    "reference_answer": "療效：在原發性全身型發作中，Valproate 的療效優於 Lamotrigine。皮膚過敏風險：Lamotrigine 屬於高皮膚過敏風險藥物（有致命 SJS/TEN 風險）；Valproic acid 的皮疹風險極低（Low risk）。相互作用：Valproate 會抑制 Lamotrigine 的代謝，若兩者併用會使 Lamotrigine 的血中濃度升高並增加皮膚過敏風險，因此併用時 Lamotrigine 的劑量必須減半。",
+    "evidence": [
+      {
+        "source": "2025癲癇診療指引-第七版 (A5) 全 -網_0.pdf",
+        "location": "表9-2 與 附件副作用說明",
+        "text": "Valproate 療效優於 Lamotrigine。Lamotrigine 為 High risk 皮疹，Valproate 為 Low risk。Valproate 抑制 Lamotrigine 代謝，併用時 Lamotrigine 劑量宜減半。"
+      },
+      {
+        "source": "兒童癲癇診療指引-第二版 (A5) 全 (84頁)_含封_0.pdf",
+        "location": "第4.2.1節 療效比較",
+        "text": "原發性全身性發作 valproate 療效優於 lamotrigine。"
+      }
+    ],
+    "multi_source": true
+  },
+  {
+    "id": 51,
+    "type": "comparison",
+    "question": "比較國際 10-20 電極系統與擴展 10-10 電極系統在電極數量及中間點命名規則上的差別。",
+    "answerable": true,
+    "reference_answer": "電極數量：標準 10-20 系統均勻配置 21 個電極（19個頭皮電極加2個耳電極，2017更新版增加至25個）；10-10 系統則將間隔縮小為 10%，電極數量大幅增加。命名規則：10-20 系統主要以單一字母代表腦葉（如 F, C, P, O, T）；10-10 系統針對冠狀線中間點採用相鄰兩個標準電極的結合名稱（如 FT, FC, TP, CP, PO, AF）。",
+    "evidence": [
+      {
+        "source": "腦電圖指引-第四版 (A5) 全224p_含封_0.pdf",
+        "location": "第4.2.1與4.3節 10-20與10-10系統",
+        "text": "10-20 系統 21 個電極。10-10 系統採用與其相鄰兩個標準電極名稱和字母聯用（如 FT, FC, CP, PO, AF）。"
+      }
+    ],
+    "multi_source": false
+  },
+  {
+    "id": 52,
+    "type": "comparison",
+    "question": "比較常規腦電圖（Routine EEG）與長時間影像腦電圖監測（Video-EEG monitoring）在檢查時間與臨床用途上的差異。",
+    "answerable": true,
+    "reference_answer": "檢查時間：常規腦電圖記錄時間較短（通常約 20–30 分鐘）；Video-EEG 則進行長達數小時至數天的持續記錄。臨床用途：常規腦電圖主要用於門診初步篩檢發作間期的異常波；Video-EEG 則能同時同步記錄臨床發作影像與腦電波，是確診發作型態、定位癲癇發作起始區（Seizure onset zone）、進行難治性癲癇術前評估及鑑別心因性非癲癇發作（PNES）的金標準。",
+    "evidence": [
+      {
+        "source": "2025癲癇診療指引-第七版 (A5) 全 -網_0.pdf",
+        "location": "第5.1節 與 腦電圖指引",
+        "text": "常規腦電圖記錄時間短；長時間影像腦電圖監測能定位發作起始區供術前評估及鑑別診斷。"
+      }
+    ],
+    "multi_source": true
+  },
+  {
+    "id": 53,
+    "type": "comparison",
+    "question": "比較兩岸三地在英文術語 'Status Epilepticus' 與 'Hypsarrhythmia' 的中文譯名異同。",
+    "answerable": true,
+    "reference_answer": "Status Epilepticus：台灣 2011 年共識譯名為「持續癲癇發作狀態」，大陸共識譯名為「癲癇持續狀態」。Hypsarrhythmia：台灣 2011 年共識譯名為「高度失律」，大陸共識譯名為「高幅失律」。",
+    "evidence": [
+      {
+        "source": "癲癇學和腦電圖學名詞中文標準譯法協議手冊( 72頁A5  )-書--正確_0417_0.pdf",
+        "location": "協議附件編號 14 與 107",
+        "text": "Status Epilepticus (台: 持續癲癇發作狀態; 陸: 癲癇持續狀態); Hypsarrhythmia (台: 高度失律; 陸: 高幅失律)。"
+      }
+    ],
+    "multi_source": false
+  },
+  {
+    "id": 54,
+    "type": "comparison",
+    "question": "比較單純性熱性痙攣（Simple febrile seizure）與複雜性熱性痙攣（Complex febrile seizure）在臨床特徵與日後演變成癲癇機率上的差異。",
+    "answerable": true,
+    "reference_answer": "臨床特徵：單純性熱性痙攣為全身性發作、發作時間短（<15分鐘）、24小時內僅發作1次；複雜性熱性痙攣則包含「局部性發作」、「發作時間過長」或「24小時內發作二次以上」。癲癇風險：單純性熱性痙攣日後發生癲癇的機率僅比無熱性痙攣者多一點點；複雜性熱性痙攣日後演變成癲癇的風險則相對較高。",
+    "evidence": [
+      {
+        "source": "兒童癲癇診療指引-第二版 (A5) 全 (84頁)_含封_0.pdf",
+        "location": "第5.8.4與5.8.5節",
+        "text": "複雜性熱性痙攣包括：（1）局部性發作；（2）過長的發作時間；（3）二次以上發作。單純性發生癲癇機率只多一點點。"
+      }
+    ],
+    "multi_source": false
+  },
+  {
+    "id": 55,
+    "type": "comparison",
+    "question": "比較 SeLECT 量表與 CAVE 量表在適用之中風類型與包含危險因子上的不同。",
+    "answerable": true,
+    "reference_answer": "適用中風類型：SeLECT 量表適用於「缺血性腦中風」；CAVE 量表適用於「出血性腦中風」。危險因子內容：SeLECT 包含 NIHSS 分數（中風嚴重度）、大動脈粥狀硬化病因、早發性發作、皮質侵犯及中大腦動脈區域；CAVE 則包含皮質位置（Cortical location）、較年輕年齡（younger Age）、出血體積大（large Volume）及急性症狀性發作（acute sEizure）。",
+    "evidence": [
+      {
+        "source": "2025癲癇診療指引-第七版 (A5) 全 -網_0.pdf",
+        "location": "第13.6節 中風後癲癇預測量表",
+        "text": "SeLECT 量表適用於缺血性腦中風（Severity, Large-artery, Early seizure, Cortical, MCA）；CAVE 量表適用於出血性腦中風（Cortical, Age, Volume, Early seizure）。"
+      }
+    ],
+    "multi_source": false
+  },
+  {
+    "id": 56,
+    "type": "comparison",
+    "question": "比較 Carbamazepine 與 Phenytoin 在影響傳統口服抗凝血劑（Warfarin）與新型口服抗凝血劑（Dabigatran）血中濃度的機轉異同。",
+    "answerable": true,
+    "reference_answer": "影響 Warfarin：Carbamazepine 與 Phenytoin 均為肝臟 CYP450 酵素誘導劑，會促進 Warfarin 的代謝而降低其血中濃度。影響 Dabigatran：Dabigatran 的代謝雖與 CYP450 無關，但其吸收經由 P-glycoprotein 媒介，Carbamazepine 與 Phenytoin 皆為 P-glycoprotein 的誘導劑，併用時同樣會降低 Dabigatran 的血中濃度。",
+    "evidence": [
+      {
+        "source": "中風後癲癇治療指引(A5)_OK (48頁)_0.pdf",
+        "location": "第8.2.1節 口服抗凝血劑交互作用",
+        "text": "Warfarin 經 CYP 酵素代謝，Phenytoin/CBZ 為誘導劑；Dabigatran 經 P-glycoprotein 媒介，CBZ 與 Phenytoin 皆為 P-gp 誘導劑，會減低 Dabigatran 血中濃度。"
+      }
+    ],
+    "multi_source": false
+  },
+  {
+    "id": 57,
+    "type": "comparison",
+    "question": "比較 2015 ILAE 定義中，全面性強直陣攣持續狀態（Generalized tonic-clonic SE）與失去知覺的局部發作持續狀態（Focal SE with impaired consciousness）在 t1 與 t2 時間點上的差異。",
+    "answerable": true,
+    "reference_answer": "全面性強直陣攣 SE：t1（開始緊急治療時間）為 5 分鐘，t2（產生長期神經損傷時間）為 30 分鐘。失去知覺的局部發作 SE：t1 為 10 分鐘，t2 為 60 分鐘。",
+    "evidence": [
+      {
+        "source": "2025癲癇診療指引-第七版 (A5) 全 -網_0.pdf",
+        "location": "第17.1節 與 圖17-2 (p18, p19)",
+        "text": "抽搐型發作（GTC SE）t1為5min，t2為30min；Focal SE with impaired consciousness t1為10min，t2為60min。"
+      }
+    ],
+    "multi_source": false
+  },
+  {
+    "id": 58,
+    "type": "comparison",
+    "question": "比較 Topiramate 與 Valproate 在對體重的影響及預防偏頭痛適應症上的異同。",
+    "answerable": true,
+    "reference_answer": "體重影響：Topiramate 會抑制食慾並導致體重減輕（Weight loss）；Valproate 則常導致體重增加（Weight gain）。共同適應症：兩者在兒童癲癇指引中均被提及可用於合併偏頭痛（Migraine）的患者處方。",
+    "evidence": [
+      {
+        "source": "兒童癲癇診療指引-第二版 (A5) 全 (84頁)_含封_0.pdf",
+        "location": "第4.2.5 (3)節 偏頭痛 與 2025指引附件表",
+        "text": "偏頭痛可考慮使用 topiramate, valproate。Topiramate 導致 weight loss，Valproate 導致 weight gain。"
+      }
+    ],
+    "multi_source": true
+  },
+  {
+    "id": 59,
+    "type": "comparison",
+    "question": "比較第一代抗癲癇藥物（如 Phenytoin、Carbamazepine）與新型抗癲癇藥物（如 Levetiracetam、Lamotrigine）用於老年中風患者時的安全性與藥物交互作用。",
+    "answerable": true,
+    "reference_answer": "第一代藥物：多經由肝臟 P450 系統代謝，具有高度蛋白質結合率及酵素誘導作用，極易與老年中風常用藥物（如 Warfarin、NOACs、抗血壓藥）產生嚴重交互作用，且鎮靜與認知副作用較大。新型藥物：療效與第一代相當，但安全性與耐受性較佳，肝藥酵素交互作用少（如 Levetiracetam 由腎臟排泄），對老年人認知功能的影響顯著較輕。",
+    "evidence": [
+      {
+        "source": "中風後癲癇治療指引(A5)_OK (48頁)_0.pdf",
+        "location": "第7.3.2、7.3.4、7.3.6節",
+        "text": "新型抗癲癇藥物針對老人族群在療效上與第一代相似，但卻有較佳安全性與較少交互作用。第一代經肝代謝蛋白結合高，易與 Warfarin 交互作用。"
+      }
+    ],
+    "multi_source": false
+  },
+  {
+    "id": 60,
+    "type": "comparison",
+    "question": "比較 Wicket spikes 與 Benign epileptiform sharp transients of sleep (BETs / Small sharp spikes) 在腦電圖出現時機與臨床意義上的異同。",
+    "answerable": true,
+    "reference_answer": "出現時機：Wicket spikes 常在清醒或放鬆/思睡期出現於顳葉；BETs（睡眠良性癲癇樣尖波/小型銳波）則主要在淺睡期出現。臨床意義：兩者均屬於正常人群中出現的「良性正常變異（Benign variants）」，皆不代表病理性癲癇放電，不應誤判為癲癇。",
+    "evidence": [
+      {
+        "source": "腦電圖指引-第四版 (A5) 全224p_含封_0.pdf",
+        "location": "良性變異說明 與 協議手冊98號名詞",
+        "text": "Wicket spikes 與 BETs（Benign epileptiform sharp transients of sleep）均屬於良性變異波，無慢波跟隨，不作癲癇診斷。"
+      }
+    ],
+    "multi_source": true
+  },
+  {
+    "id": 61,
+    "type": "comparison",
+    "question": "比較 Phenobarbital 與 Levetiracetam 在新生兒及小於兩歲幼兒癲癇中的治療地位與常見副作用差異。",
+    "answerable": true,
+    "reference_answer": "治療地位：Phenobarbital 為新生兒癲癇及小於2歲幼兒第一線首選藥物；Levetiracetam 則常作為第二線或頑固型/合併加用藥物（且在急診或特定抽搐時可作為注射選擇）。副作用：Phenobarbital 具有顯著鎮靜作用，且長期使用已知有較高之智商下降、認知與過動行為問題；Levetiracetam 則無肝毒性與顯著認知損害，但需注意情緒易怒、情緒波動等行為變化。",
+    "evidence": [
+      {
+        "source": "兒童癲癇診療指引-第二版 (A5) 全 (84頁)_含封_0.pdf",
+        "location": "第4.2.5 (4)、4.2.7 (2)、4.3.1節",
+        "text": "Phenobarbital 應為第一線藥物；Phenobarbital 有較高 IQ 下降與過動，Levetiracetam 對認知影響極小但要注意易怒。"
+      }
+    ],
+    "multi_source": false
+  },
+  {
+    "id": 62,
+    "type": "comparison",
+    "question": "比較抽搐型持續癲癇發作狀態（SE）在第一階段（Stage I）與第二階段（Stage II）的給藥種類與給藥途徑異同。",
+    "answerable": true,
+    "reference_answer": "Stage I（5-10分鐘，Early SE）：第一線藥物為 Benzodiazepines 類，給藥途徑包含靜脈注射（Lorazepam IV, Diazepam IV）或肌肉注射（Midazolam IM）。Stage II（10-30分鐘，Established SE）：若一線無效，第二線改用抗癲癇藥物（ASM），給藥途徑為靜脈滴注/注射（IV），首選藥物包括 Phenytoin / Fosphenytoin、Valproic acid 或 Levetiracetam。",
+    "evidence": [
+      {
+        "source": "2025癲癇診療指引-第七版 (A5) 全 -網_0.pdf",
+        "location": "第17.4.2節 與 圖17-1",
+        "text": "Stage I 5-10min: Benzodiazepines (Lorazepam IV, Diazepam IV, Midazolam IM); Stage II 10-30min: Injectable ASMs (Phenytoin IV, Valproate IV, Levetiracetam IV)。"
+      }
+    ],
+    "multi_source": false
+  },
+  {
+    "id": 63,
+    "type": "comparison",
+    "question": "比較 10-20 系統中 Frontal polar (Fp) 電極與 Temporal (T) 電極在頭皮分佈區域與命名含義的不同。",
+    "answerable": true,
+    "reference_answer": "分佈區域：Fp 電極部位於額頭最前方的額極區（前額兩側）；T 電極部位於頭皮兩側的顳葉區域。命名含義：Fp 代表 Frontal polar（額極）；T 代表 Temporal lobe（顳葉）。兩者均遵循右側偶數、左側奇數的標示原則（如 Fp1/Fp2 與 T3/T4 或 T7/T8）。",
+    "evidence": [
+      {
+        "source": "腦電圖指引-第四版 (A5) 全224p_含封_0.pdf",
+        "location": "第4.2.1節 10-20系統",
+        "text": "Fp 代表 frontal polar （額極）；T 代表 temporal lobe （顳葉）。"
+      }
+    ],
+    "multi_source": false
+  },
+  {
+    "id": 64,
+    "type": "comparison",
+    "question": "比較 Ethosuximide 與 Carbamazepine 在兒童失神發作（Absence seizures）處置上的作用差異。",
+    "answerable": true,
+    "reference_answer": "Ethosuximide 是兒童失神發作的第一線首選治療藥物，能有效控制失神發作；相反地，Carbamazepine 屬於窄效型鈉離子通道阻斷劑，在失神發作患者中屬於重大禁忌藥物，使用會惡化或誘發失神發作。",
+    "evidence": [
+      {
+        "source": "兒童癲癇診療指引-第二版 (A5) 全 (84頁)_含封_0.pdf",
+        "location": "第4.5.2 (1)節 兒童失神發作首選藥",
+        "text": "兒童失神型發作第一選擇：ethosuximide, valproate, lamotrigine。"
+      },
+      {
+        "source": "2025癲癇診療指引-第七版 (A5) 全 -網_0.pdf",
+        "location": "失神發作禁忌藥物章節",
+        "text": "Carbamazepine、Phenytoin 等會加重或誘發失神發作。"
+      }
+    ],
+    "multi_source": true
+  },
+  {
+    "id": 65,
+    "type": "comparison",
+    "question": "比較「癲癇發作（Seizure types）」與「癲癇症候群（Epilepsy syndromes）」在 ILAE 2017 分類框架中的定義層級與評估維度差異。",
+    "answerable": true,
+    "reference_answer": "定義層級：癲癇發作（Seizure types）是分類的第一層次，僅指單次異常放電的臨床與電生理表現型（如局部型、全面型）；癲癇症候群（Epilepsy syndromes）則是第三層次的高階分類。評估維度：癲癇發作僅評估發作起始特徵；癲癇症候群則需結合發病年齡、特定的腦波特徵（EEG）、臨床發作型態、發作時間誘發因子、影像學及相關共病症進行綜合診斷與預後評估。",
+    "evidence": [
+      {
+        "source": "2025癲癇診療指引-第七版 (A5) 全 -網_0.pdf",
+        "location": "第3.1節 癲癇的分類 (p6)",
+        "text": "包含三個層次：癲癇發作（seizure types）、癲癇（epilepsy types）及癲癇症候群（epilepsy syndromes），結合病因、年齡、腦波與共病症。"
+      }
+    ],
+    "multi_source": false
+  },
+  {
+    "id": 66,
+    "type": "reasoning",
+    "question": "情境：一名 68 歲中風患者正在服用 Warfarin 預防血栓，最近出現遲發性癲癇發作。為什麼醫師不宜優先處方 Phenytoin，而較宜考慮 Lamotrigine 或 Levetiracetam？",
+    "answerable": true,
+    "reference_answer": "根據指引，Phenytoin 為舊型第一代 ASM，具有高度肝臟酵素誘導作用與蛋白質結合率，會顯著降低 Warfarin 的血中濃度，導致抗凝血效果難以維持控制；而 Lamotrigine 與 Levetiracetam 為新型藥物，肝藥酵素交互作用極少（Levetiracetam 由腎臟代謝），且研究顯示低劑量 Lamotrigine 或 Levetiracetam 對於需要服用抗凝血劑的中風老年癲癇族群為理想且安全的第一線處方。",
+    "evidence": [
+      {
+        "source": "2025癲癇診療指引-第七版 (A5) 全 -網_0.pdf",
+        "location": "第13.8節 與 中風指引 7.3.4, 7.3.9節",
+        "text": "Phenytoin 降低 Warfarin 濃度。低劑量 Lamotrigine 或 Levetiracetam 對於中風後發作且需要抗凝血劑者為理想第一線藥物。"
+      }
+    ],
+    "multi_source": true
+  },
+  {
+    "id": 67,
+    "type": "reasoning",
+    "question": "情境：一位 3 歲幼兒出現持續全身抽搐已達 8 分鐘，急診醫師判定為持續癲癇發作狀態（Early status epilepticus）。第一階段應如何進行處置？若 5-10 分鐘後發作仍未停止該怎麼辦？",
+    "answerable": true,
+    "reference_answer": "發作超過 5 分鐘屬於第一階段（Stage I / Early SE），應立即經靜脈注射 Lorazepam 或 Diazepam，或肌肉注射 Midazolam。若給藥後 5-10 分鐘發作仍無法停止，指引建議可再追加重複給予一劑 Benzodiazepines 藥物；若仍無法控制則需進入第二階段使用靜脈抗癲癇藥物（如 Levetiracetam 或 Valproate）。",
+    "evidence": [
+      {
+        "source": "2025癲癇診療指引-第七版 (A5) 全 -網_0.pdf",
+        "location": "第17.4.2 (1)節 抽搐型持續癲癇處置",
+        "text": "立即給予 Benzodiazepines 類藥物（Lorazepam IV, Diazepam IV, Midazolam IM）。若癲癇發作無法停止，可於第一次給藥後 5-10 分鐘再給予一劑藥物。"
+      }
+    ],
+    "multi_source": false
+  },
+  {
+    "id": 68,
+    "type": "reasoning",
+    "question": "情境：一名 25 歲女性癲癇患者同時服用口服避孕藥，若醫師為其處方 Phenobarbital 或 Carbamazepine，可能產生什麼潛在問題？原因為何？",
+    "answerable": true,
+    "reference_answer": "可能導致避孕藥失效而意外懷孕。原因為 Phenobarbital 與 Carbamazepine 屬於酵素促進之抗癲癇藥物（Enzyme-inducing ASMs），會增加口服避孕藥在體內的廓清率（Clearance），從而降低避孕藥的血中濃度與效果。",
+    "evidence": [
+      {
+        "source": "兒童癲癇診療指引-第二版 (A5) 全 (84頁)_含封_0.pdf",
+        "location": "第4.2.7 (1)節 性別與藥物交互作用",
+        "text": "酵素促進之抗癲癇藥物(enzyme-inducing AED， 如 phenobarbital, phenytoin, and carbamazepine)增加避孕藥之廓清率導致避孕失敗。"
+      }
+    ],
+    "multi_source": false
+  },
+  {
+    "id": 69,
+    "type": "reasoning",
+    "question": "情境：一位慢性腎衰竭（肌氮酸清除率低於 70 ml/min）的癲癇患者需要使用 Levetiracetam。在處方劑量上需要做什麼調整？原因為何？",
+    "answerable": true,
+    "reference_answer": "建議將 Levetiracetam 的劑量減半。原因為 Levetiracetam 在體內 100% 由腎臟（Renal）清除排泄，當腎功能低下時藥物容易在體內蓄積而產生毒性，因此必須依腎功能減量。",
+    "evidence": [
+      {
+        "source": "中風後癲癇治療指引(A5)_OK (48頁)_0.pdf",
+        "location": "第7.4.3節 Levetiracetam劑量調整與表6",
+        "text": "Levetiracetam：腎臟功能障礙患者使用時，必須調整劑量...當肌氨酐酸清除率小於 70ml/min，建議將劑量減半。Levetiracetam 100% 腎臟排泄。"
+      }
+    ],
+    "multi_source": false
+  },
+  {
+    "id": 70,
+    "type": "reasoning",
+    "question": "情境：一名 1 歲幼兒被懷疑為先天代謝性疾病（Inborn errors of metabolism）導致頑固型癲癇。為什麼 Valproate (丙戊酸) 屬於絕對禁忌藥物？",
+    "answerable": true,
+    "reference_answer": "根據《兒童癲癇診療指引》，若懷疑為代謝疾病造成癲癇，Valproate 為禁忌使用藥物。因為 Valproate 在小於 2 歲且伴有代謝疾病或發展遲緩的幼兒中，具有引發嚴重致命性肝毒性（Hepatotoxicity / Liver failure）的高風險。",
+    "evidence": [
+      {
+        "source": "兒童癲癇診療指引-第二版 (A5) 全 (84頁)_含封_0.pdf",
+        "location": "第4.2.3節 與 4.3.6節",
+        "text": "若懷疑為代謝疾病造成癲癇，valproate 為禁忌使用藥物。valproate 造成肝毒性(尤其＜2 歲，多藥物治療及發展遲緩幼兒)。"
+      }
+    ],
+    "multi_source": false
+  },
+  {
+    "id": 71,
+    "type": "reasoning",
+    "question": "情境：一名 72 歲失智症患者接受常規腦電圖檢查，報告顯示左側顳葉出現 'Wicket spikes'，但患者臨床上完全沒有任何癲癇發作症狀。醫療團隊應如何解讀？是否應處方抗癲癇藥？",
+    "answerable": true,
+    "reference_answer": "醫療團隊不應將其判讀為癲癇，也不應處方抗癲癇藥。因為 Wicket spikes 屬於良性正常腦波變異（Benign variants），常出現在老年人睡眠或思睡期，屬於非病理性的腦波現象，臨床上「異常腦電圖不等於癲癇」，必須結合臨床發作症狀才能診斷。",
+    "evidence": [
+      {
+        "source": "腦電圖指引-第四版 (A5) 全224p_含封_0.pdf",
+        "location": "Wicket spikes 圖說 (p78) 與 2025指引 局限性",
+        "text": "72 歲女性有失智症病史，腦電圖顯示在左側顳葉區有 wicket spikes。無癲癇的正常人也可能出現類似癲癇波的良性腦波變化，不等於癲癇。"
+      }
+    ],
+    "multi_source": true
+  },
+  {
+    "id": 72,
+    "type": "reasoning",
+    "question": "情境：一名缺血性腦中風患者 NIHSS 得分為 12 分、中風病灶侵犯大腦皮質，且中風急性期出現早發性抽搐。根據 SeLECT 量表，該患者在中風後發生遲發性癲癇的風險評估為何？",
+    "answerable": true,
+    "reference_answer": "該患者具有多項 SeLECT 量表的高風險因子：包含中風嚴重度（NIHSS分數）、皮質侵犯（Cortical involvement）以及早發性發作（Early seizures）。根據文件，這些因子均會顯著增加患者日後發生遲發性中風後癲癇（Late-onset post-stroke epilepsy）的風險。",
+    "evidence": [
+      {
+        "source": "2025癲癇診療指引-第七版 (A5) 全 -網_0.pdf",
+        "location": "第13.5與13.6節 中風後癲癇危險因子",
+        "text": "遲發性發作或中風後癲癇的危險因子為早發性癲癇發作、皮質侵犯、中風嚴重度（SeLECT 量表包含 Severity, Early seizures, Cortical involvement）。"
+      }
+    ],
+    "multi_source": false
+  },
+  {
+    "id": 73,
+    "type": "reasoning",
+    "question": "情境：一名 10 歲兒童診斷為局部型癲癇，同時伴有肥胖與偏頭痛。哪種抗癲癇藥物可能同時對這兩種共病有幫助？",
+    "answerable": true,
+    "reference_answer": "Topiramate。因為根據指引，Topiramate 不僅能治療局部型癲癇，且臨床上可用於預防偏頭痛，同時其具有抑制食慾與減重的效果，適合肥胖的癲癇病童。",
+    "evidence": [
+      {
+        "source": "兒童癲癇診療指引-第二版 (A5) 全 (84頁)_含封_0.pdf",
+        "location": "第4.2.5 (2)(3)節 併發症狀選藥",
+        "text": "肥胖者可考慮使用 topiramate, zonisamide；偏頭痛可考慮使用 topiramate, valproate。"
+      }
+    ],
+    "multi_source": false
+  },
+  {
+    "id": 74,
+    "type": "reasoning",
+    "question": "情境：一名患者持續抽搐超過 30 分鐘，經 Benzodiazepines 及二線靜脈抗癲癇藥物後仍無法控制，進入 Refractory Status Epilepticus。醫療團隊需採取何種重要處置？",
+    "answerable": true,
+    "reference_answer": "原則上須加上全身性麻醉藥物（如 Midazolam、Propofol、Phenobarbital、Thiopental），且必須在加護病房（ICU）單位內進行，插入氣管內管並使用呼吸器，同時密切監測血壓以維持生命跡象穩定。",
+    "evidence": [
+      {
+        "source": "2025癲癇診療指引-第七版 (A5) 全 -網_0.pdf",
+        "location": "第17.4.2 (3)節 頑固型持續癲癇處置",
+        "text": "超過 30 分鐘以上（Refractory SE）：須加上全身性麻醉藥物...需在加護單位內插入氣管內管並使用呼吸器，監測血壓。"
+      }
+    ],
+    "multi_source": false
+  },
+  {
+    "id": 75,
+    "type": "reasoning",
+    "question": "情境：一名 1.5 歲兒童出現急性發燒併發全身抽搐，發作持續 2 分鐘，24 小時內僅發作 1 次，發作後迅速恢復意識。這屬於單純性還是複雜性熱性痙攣？智力發展是否會受影響？",
+    "answerable": true,
+    "reference_answer": "屬於「單純性熱性痙攣」（Simple febrile seizure），因為發作時間短（<15分鐘）、全身性發作且24小時內僅發作1次。長遠來看，不論單純或複雜性熱性痙攣，長期追蹤的智商及腦神經發展均不受影響。",
+    "evidence": [
+      {
+        "source": "兒童癲癇診療指引-第二版 (A5) 全 (84頁)_含封_0.pdf",
+        "location": "第5.8.3與5.8.5節 熱性痙攣特徵與預後",
+        "text": "複雜性包含局部發作、過長發作、二次以上發作。病童長期追蹤的智商及其他腦神經發展沒有差異。"
+      }
+    ],
+    "multi_source": false
+  },
+  {
+    "id": 76,
+    "type": "reasoning",
+    "question": "情境：一名癲癇患者已超過 2 年沒有發作，家屬詢問是否可以停藥。若患者屬於症狀性病因（Symptomatic etiology）且伴有智能障礙，這屬於有利還是不利於停藥的因素？",
+    "answerable": true,
+    "reference_answer": "屬於「不利於停藥（Unfavorable）」的因素。根據中風後癲癇治療指引表 2，症狀性病因（Symptomatic etiology）與智能障礙（Mental retardation）均列為評估停用抗癲癇藥物的不利因素，停藥需更加謹慎。",
+    "evidence": [
+      {
+        "source": "中風後癲癇治療指引(A5)_OK (48頁)_0.pdf",
+        "location": "表2. 停止抗癲癇藥物：有利及不利因素 (p32)",
+        "text": "Unfavorable factors 包含：Symptomatic etiology、Mental retardation、發病年齡>10-12歲。"
+      }
+    ],
+    "multi_source": false
+  },
+  {
+    "id": 77,
+    "type": "reasoning",
+    "question": "情境：一名患者接受 Video-EEG 監測，於淺睡期錄到枕葉區域出現朝上的銳波（POSTS）。這屬於病理性癲癇放電還是正常睡眠變異？",
+    "answerable": true,
+    "reference_answer": "屬於「正常睡眠生理變異波」（Positive occipital sharp transients of sleep, POSTS / Lambdoid waves），常在淺睡期出現於枕葉，不屬於病理性癲癇放電，不作癲癇診斷。",
+    "evidence": [
+      {
+        "source": "腦電圖指引-第四版 (A5) 全224p_含封_0.pdf",
+        "location": "POSTS 範例圖說 (p76)",
+        "text": "Positive occipital sharp transients of sleep: 在淺睡期，枕葉導極出現陣發性朝上銳波，又稱 Lambdoid waves，為正常淺睡期波形。"
+      }
+    ],
+    "multi_source": false
+  },
+  {
+    "id": 78,
+    "type": "reasoning",
+    "question": "情境：一名 5 歲兒童出現突然發呆、眼神凝視數秒後恢復正常，腦波顯示 3Hz 棘慢複合波。若醫師誤診為局部發作而開立 Carbamazepine，會產生什麼後果？",
+    "answerable": true,
+    "reference_answer": "會導致失神發作惡化或發作頻率增加。因為該臨床表現與 3Hz 棘慢複合波為典型的「兒童失神發作（Absence seizure）」，而 Carbamazepine 屬於會惡化或誘發失神發作的禁忌藥物。",
+    "evidence": [
+      {
+        "source": "2025癲癇診療指引-第七版 (A5) 全 -網_0.pdf",
+        "location": "失神發作禁忌藥物章節",
+        "text": "Carbamazepine、Phenytoin 等窄效型藥物會加重或誘發失神發作。"
+      }
+    ],
+    "multi_source": false
+  },
+  {
+    "id": 79,
+    "type": "reasoning",
+    "question": "情境：一名缺血性腦中風患者住院期間並未發生任何癲癇發作，家屬要求醫師預防性開立抗癲癇藥物。醫師應如何建議？",
+    "answerable": true,
+    "reference_answer": "醫師應建議不需要常規預防性給藥。因為 Cochrane 綜合分析研究顯示，所有抗癲癇藥物用於中風後預防性治療的證據力均未達統計學顯著意義，因此中風後若未發生發作，不建議常規使用抗癲癇藥物。",
+    "evidence": [
+      {
+        "source": "2025癲癇診療指引-第七版 (A5) 全 -網_0.pdf",
+        "location": "第13.10節 與 中風指引 7.7節",
+        "text": "目前並無足夠證據支持常規性使用 ASM 能預防中風後癲癇發作...故如中風後未發生發作則不建議使用抗癲癇藥物。"
+      }
+    ],
+    "multi_source": true
+  },
+  {
+    "id": 80,
+    "type": "reasoning",
+    "question": "情境：一名頑固型癲癇患者進入 Super-refractory status epilepticus（全身麻醉藥物使用超過 24 小時仍持續發作）。除傳統藥物外可考慮哪些非藥物處置方式？",
+    "answerable": true,
+    "reference_answer": "可考慮的非藥物治療方式包括：迷走神經刺激術（VNS）、深部腦刺激術（DBS）、生酮飲食（Ketogenic diet）、低溫療法（攝氏 32-34 度）、穿顱磁刺激（rTMS）及癲癇手術等。",
+    "evidence": [
+      {
+        "source": "2025癲癇診療指引-第七版 (A5) 全 -網_0.pdf",
+        "location": "第17.4.2 (4)節 Super-refractory SE",
+        "text": "非藥物的方法如迷走神經刺激術、深部腦刺激術、生酮飲食、低溫（攝氏 32-34 度）、穿顱磁刺激、手術等。"
+      }
+    ],
+    "multi_source": false
+  },
+  {
+    "id": 81,
+    "type": "reasoning",
+    "question": "情境：一名兒童同時診斷有癲癇與注意力不集中過動症候群（ADHD），在使用 Phenobarbital 或 Benzodiazepines 時需注意什麼？",
+    "answerable": true,
+    "reference_answer": "需要注意這些藥物可能會增加或惡化注意力不集中過動症候群（ADHD）的症狀。指引指出 Phenobarbital、Primidone、Benzodiazepines 等藥物較容易增加 ADHD 的表現。",
+    "evidence": [
+      {
+        "source": "兒童癲癇診療指引-第二版 (A5) 全 (84頁)_含封_0.pdf",
+        "location": "第4.2.5 (4)節 認知情緒行為",
+        "text": "增加注意力不集中過動症候群：抗癲癇藥物幾乎都有，尤其 phenobarbital, primidone, benzodiazepines, vigabatrin。"
+      }
+    ],
+    "multi_source": false
+  },
+  {
+    "id": 82,
+    "type": "reasoning",
+    "question": "情境：腦電圖檢查時，若患者眨眼、咬肌收縮或肢體抖動造成波形干擾，這些干擾波（Artifacts）會對診斷造成什麼影響？",
+    "answerable": true,
+    "reference_answer": "干擾波（Artifacts）可能掩蓋真實的大腦電位訊號，或者被誤判為病理性癲癇樣放電（造成偽陽性誤診），因此必須由經驗豐富的醫師精確識別與排除。",
+    "evidence": [
+      {
+        "source": "2025癲癇診療指引-第七版 (A5) 全 -網_0.pdf",
+        "location": "腦電圖局限性章節與腦電圖指引",
+        "text": "生理與環境干擾波（Artifacts，如眼動、咬肌收縮、心電圖）可能干擾腦波判讀甚至造成假象誤判。"
+      }
+    ],
+    "multi_source": true
+  },
+  {
+    "id": 83,
+    "type": "reasoning",
+    "question": "情境：一名患者服用 Lamotrigine，因癲癇控制不佳，醫師計畫加用 Valproate。Valproate 對 Lamotrigine 的代謝有何影響？合併使用時 Lamotrigine 的劑量應如何調整？",
+    "answerable": true,
+    "reference_answer": "Valproate 會抑制 Lamotrigine 在肝臟的代謝，顯著增加 Lamotrigine 的血中濃度與嚴重皮膚過敏（SJS/TEN）的風險。因此兩者合併使用時（尤其初次加用），Lamotrigine 的劑量必須減半。",
+    "evidence": [
+      {
+        "source": "中風後癲癇治療指引(A5)_OK (48頁)_0.pdf",
+        "location": "第8章 藥物手冊說明與2025指引",
+        "text": "因 Valproate 抑制 Lamotrigine 代謝而增加皮膚過敏風險，因此兩者併用時，Lamotrigine 的劑量宜減半。"
+      }
+    ],
+    "multi_source": true
+  },
+  {
+    "id": 84,
+    "type": "reasoning",
+    "question": "情境：一名缺血性中風患者同時服用新型口服抗凝血劑 Dabigatran，若加用 Carbamazepine，對 Dabigatran 的血中濃度有何影響？原因為何？",
+    "answerable": true,
+    "reference_answer": "會減低 Dabigatran 的血中濃度，可能降低其抗凝血療效。原因為 Dabigatran 的腸道吸收是由 P-glycoprotein 媒介，而 Carbamazepine 屬於 P-glycoprotein 的強誘導劑。",
+    "evidence": [
+      {
+        "source": "中風後癲癇治療指引(A5)_OK (48頁)_0.pdf",
+        "location": "第8.2.1節 口服抗凝血劑交互作用",
+        "text": "Dabigatran 的吸收是以 P-glycoprotein 媒介，Carbamazepine 為 P-glycoprotein 誘導劑，併用時會減低 Dabigatran 的血中濃度。"
+      }
+    ],
+    "multi_source": false
+  },
+  {
+    "id": 85,
+    "type": "reasoning",
+    "question": "情境：一名新診斷癲癇患者的常規腦電圖結果完全正常。這是否代表可以排除癲癇？醫師後續可安排什麼檢查來提高異常波捕捉率？",
+    "answerable": true,
+    "reference_answer": "不能排除癲癇（正常的腦電圖不能排除癲癇）。因為常規檢查時間短，可能未抓到發作間期放電。醫師後續可安排「睡眠剝奪腦電圖」、加做光刺激/過度換氣誘發，或進行「長時間影像腦電圖監測（Video-EEG）」來提高異常波的捕捉率。",
+    "evidence": [
+      {
+        "source": "2025癲癇診療指引-第七版 (A5) 全 -網_0.pdf",
+        "location": "腦電圖局限性章節與第5.1節",
+        "text": "常規腦電圖結果正常依然無法排除癲癇。可透過睡眠剝奪腦電圖或長時間影像腦電圖監測（LTME/Video-EEG）提高捕捉率。"
+      }
+    ],
+    "multi_source": true
+  },
+  {
+    "id": 86,
+    "type": "unanswerable",
+    "question": "Levetiracetam 與 Lamotrigine 在治療兒童癲癇時，哪一種藥物能帶來更高的五年整體存活率（5-year overall survival rate）？",
+    "answerable": false,
+    "reference_answer": "根據目前提供的文件內容，沒有足夠證據判斷哪一種藥物能帶來更高的五年整體存活率。",
+    "evidence": [],
+    "multi_source": false
+  },
+  {
+    "id": 87,
+    "type": "unanswerable",
+    "question": "進行腦電圖檢查黏貼頭皮電極時，所使用的導電膏（Conductive paste）具體化學成分配方與製造廠商名稱為何？",
+    "answerable": false,
+    "reference_answer": "根據目前提供的文件內容，沒有足夠證據說明導電膏的具體化學成分配方與製造廠商名稱。",
+    "evidence": [],
+    "multi_source": false
+  },
+  {
+    "id": 88,
+    "type": "unanswerable",
+    "question": "在中風後癲癇患者中，使用中藥天麻或針灸治療的具體臨床療效與推薦每日劑量為何？",
+    "answerable": false,
+    "reference_answer": "根據目前提供的文件內容，沒有足夠證據回答中藥天麻或針灸治療中風後癲癇的臨床療效與推薦劑量。",
+    "evidence": [],
+    "multi_source": false
+  },
+  {
+    "id": 89,
+    "type": "unanswerable",
+    "question": "Valproic acid 每一錠在台灣全民健康保險給付規範中的核定健保價格是多少台幣？",
+    "answerable": false,
+    "reference_answer": "根據目前提供的文件內容，沒有足夠證據提供 Valproic acid 的健保核定給付價格。",
+    "evidence": [],
+    "multi_source": false
+  },
+  {
+    "id": 90,
+    "type": "unanswerable",
+    "question": "台灣各大醫學中心（如台大醫院、台北榮總）每年收治的中風後癲癇確診病患總人數統計數據為何？",
+    "answerable": false,
+    "reference_answer": "根據目前提供的文件內容，沒有足夠證據提供台灣各大醫學中心每年收治的中風後癲癇確診總人數數據。",
+    "evidence": [],
+    "multi_source": false
+  },
+  {
+    "id": 91,
+    "type": "unanswerable",
+    "question": "癲癇患者進行生酮飲食治療時，每日早餐、午餐與晚餐精確的食譜菜單與食材克數配方為何？",
+    "answerable": false,
+    "reference_answer": "根據目前提供的文件內容，沒有足夠證據說明生酮飲食每日三餐的具體食譜菜單與食材克數配方。",
+    "evidence": [],
+    "multi_source": false
+  },
+  {
+    "id": 92,
+    "type": "unanswerable",
+    "question": "哪一種品牌的腦電圖儀器（例如 Nihon Kohden 與 Natus）在訊號雜訊比（SNR）上的實測表現最好？",
+    "answerable": false,
+    "reference_answer": "根據目前提供的文件內容，沒有足夠證據比較不同品牌腦電圖儀器的訊號雜訊比實測表現。",
+    "evidence": [],
+    "multi_source": false
+  },
+  {
+    "id": 93,
+    "type": "unanswerable",
+    "question": "抗癲癇藥物 Brivaracetam 在美國 FDA 首次核准上市的確切年份與第一期臨床試驗受試者人數為何？",
+    "answerable": false,
+    "reference_answer": "根據目前提供的文件內容，沒有足夠證據提供 Brivaracetam 在美國 FDA 核准上市的確切年份與一期臨床人數。",
+    "evidence": [],
+    "multi_source": false
+  },
+  {
+    "id": 94,
+    "type": "unanswerable",
+    "question": "迷走神經刺激術（VNS）植入式發射器晶片電池在台灣醫療院所的自費採購費用是多少台幣？",
+    "answerable": false,
+    "reference_answer": "根據目前提供的文件內容，沒有足夠證據說明迷走神經刺激術晶片電池的自費採購價格。",
+    "evidence": [],
+    "multi_source": false
+  },
+  {
+    "id": 95,
+    "type": "unanswerable",
+    "question": "兒童癲癇患者進行迷走神經刺激術（VNS）手術時，外科醫師脖子切口位置的精確公分數與縫合線規格為何？",
+    "answerable": false,
+    "reference_answer": "根據目前提供的文件內容，沒有足夠證據說明迷走神經刺激術手術切口的精確公分數與縫合線規格。",
+    "evidence": [],
+    "multi_source": false
+  },
+  {
+    "id": 96,
+    "type": "unanswerable",
+    "question": "COVID-19 輝瑞 BNT 疫苗與莫德納 mRNA 疫苗在誘發兒童熱性痙攣的確切機率比較數據為何？",
+    "answerable": false,
+    "reference_answer": "根據目前提供的文件內容，沒有足夠證據提供 BNT 與莫德納疫苗誘發兒童熱性痙攣的確切機率比較數據。",
+    "evidence": [],
+    "multi_source": false
+  },
+  {
+    "id": 97,
+    "type": "unanswerable",
+    "question": "10-20 系統中 Ag/AgCl（氯化銀）電極在攝氏 10 度至 40 度環境下的精確導電電阻物理變化數據為何？",
+    "answerable": false,
+    "reference_answer": "根據目前提供的文件內容，沒有足夠證據提供 Ag/AgCl 電極在不同氣溫下的精確導電電阻物理變化數據。",
+    "evidence": [],
+    "multi_source": false
+  },
+  {
+    "id": 98,
+    "type": "unanswerable",
+    "question": "Dravet 症候群患者在成年後的就業率與結婚率等社會人口學統計數據是多少？",
+    "answerable": false,
+    "reference_answer": "根據目前提供的文件內容，沒有足夠證據提供 Dravet 症候群患者成年後的就業率與結婚率統計。",
+    "evidence": [],
+    "multi_source": false
+  },
+  {
+    "id": 99,
+    "type": "unanswerable",
+    "question": "Cannabidiol (CBD) 口服液在台灣各大藥局門市的零售庫存數量與購買申請手續細節為何？",
+    "answerable": false,
+    "reference_answer": "根據目前提供的文件內容，沒有足夠證據說明 CBD 在台灣藥局門市的零售庫存數量與購買手續細節。",
+    "evidence": [],
+    "multi_source": false
+  },
+  {
+    "id": 100,
+    "type": "unanswerable",
+    "question": "進行睡眠剝奪腦電圖檢查前一晚，病患飲用 200ml 濃縮咖啡對頭皮接觸阻抗值的精確影響數值為何？",
+    "answerable": false,
+    "reference_answer": "根據目前提供的文件內容，沒有足夠證據說明飲用濃縮咖啡對頭皮接觸阻抗值的精確影響數值。",
+    "evidence": [],
+    "multi_source": false
+  }
+]

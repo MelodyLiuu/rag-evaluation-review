@@ -1,0 +1,1159 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>癲癇 RAG 題庫｜醫師人工評分系統 (0-2 Rubric)</title>
+<style>
+:root {
+  --bg-primary: #f4f7f6;
+  --bg-surface: #ffffff;
+  --bg-header: #123e3b;
+  --text-main: #193331;
+  --text-muted: #567069;
+  --text-light: #8fa8a1;
+  --border-color: #d8e4df;
+  --border-focus: #24735d;
+  --primary: #206d59;
+  --primary-hover: #165343;
+  --primary-subtle: #e5f3ee;
+  --accent-gold: #df9e35;
+  --score-2: #1e7e34;
+  --score-2-bg: #e8f5e9;
+  --score-2-border: #a5d6a7;
+  --score-1: #d97706;
+  --score-1-bg: #fef3c7;
+  --score-1-border: #fcd34d;
+  --score-0: #dc2626;
+  --score-0-bg: #fee2e2;
+  --score-0-border: #fca5a5;
+  --danger-bg: #fef2f2;
+  --danger-text: #991b1b;
+  --danger-border: #f87171;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans TC", sans-serif;
+  color: var(--text-main);
+  background: var(--bg-primary);
+  line-height: 1.6;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; padding: 0; }
+
+header {
+  background: var(--bg-header);
+  color: white;
+  padding: 22px max(24px, calc((100vw - 1420px)/2));
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
+.header-top { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
+.eyebrow { font-size: 12px; letter-spacing: 2px; color: #9bd6c7; font-weight: 700; }
+h1 { font-size: 24px; margin: 4px 0; font-weight: 700; }
+header p { margin: 2px 0 0; color: #c9ded9; font-size: 14px; }
+
+.toolbar {
+  max-width: 1420px;
+  margin: auto;
+  padding: 16px 24px;
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.reviewer-box { display: flex; align-items: center; gap: 8px; min-width: 260px; }
+.reviewer-box label { font-size: 13px; font-weight: 600; white-space: nowrap; }
+.reviewer-box input {
+  padding: 8px 12px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  background: white;
+  font-size: 14px;
+}
+.tool-actions { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+
+button, .filebutton {
+  border: 1px solid #b9cec7;
+  border-radius: var(--radius-sm);
+  padding: 8px 14px;
+  background: white;
+  color: var(--primary);
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 13px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.15s ease;
+}
+button:hover, .filebutton:hover { background: #e6f3ee; border-color: var(--primary); }
+button.primary { background: var(--primary); color: white; border-color: var(--primary); }
+button.primary:hover { background: var(--primary-hover); }
+button:disabled { opacity: 0.45; cursor: not-allowed; }
+.filebutton input { position: absolute; width: 1px; height: 1px; opacity: 0; }
+
+.save-status { font-size: 12px; color: var(--text-muted); margin-left: 4px; }
+
+main {
+  max-width: 1420px;
+  padding: 0 24px 32px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 340px minmax(0, 1fr);
+  gap: 20px;
+}
+
+.panel {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+}
+
+aside { align-self: start; position: sticky; top: 16px; max-height: calc(100vh - 32px); display: flex; flex-direction: column; gap: 14px; }
+
+/* Dashboard Cards in Sidebar */
+.dash-card {
+  background: #f8faf9;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 12px 14px;
+}
+.dash-card h3 { margin: 0 0 8px; font-size: 13px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; }
+.metrics-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+.metric-item {
+  background: white;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  padding: 6px 10px;
+}
+.metric-label { font-size: 11px; color: var(--text-muted); }
+.metric-val { font-size: 16px; font-weight: 700; color: var(--primary); }
+.metric-val.warn { color: var(--score-1); }
+.metric-val.danger { color: var(--score-0); }
+
+.filters { display: grid; gap: 8px; }
+.filters input, .filters select {
+  width: 100%;
+  padding: 7px 10px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+  background: white;
+}
+
+.question-list {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding-right: 4px;
+  max-height: 38vh;
+}
+.question-item {
+  text-align: left;
+  padding: 9px 12px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-color);
+  background: white;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  font-size: 12px;
+  transition: all 0.12s ease;
+}
+.question-item:hover { background: #f0f7f4; }
+.question-item[aria-current="true"] {
+  background: var(--primary-subtle);
+  border-color: var(--primary);
+  box-shadow: inset 3px 0 0 var(--primary);
+}
+.q-header { display: flex; justify-content: space-between; align-items: center; gap: 6px; }
+.q-num { font-weight: 700; color: var(--text-main); }
+.q-badges { display: flex; gap: 4px; align-items: center; }
+.badge {
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.badge-pending { background: #e2e8f0; color: #475569; }
+.badge-done { background: var(--score-2-bg); color: var(--score-2); border: 1px solid var(--score-2-border); }
+.badge-critical { background: var(--danger-bg); color: var(--danger-text); border: 1px solid var(--danger-border); font-weight: 700; }
+.badge-type { background: #e0f2fe; color: #0369a1; }
+.q-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--text-muted);
+  font-size: 12px;
+}
+
+/* Detail Section */
+.meta-tags { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 14px; }
+.tag {
+  background: #edf3f0;
+  color: #3b5c53;
+  border-radius: 6px;
+  padding: 4px 10px;
+  font-size: 12px;
+  font-weight: 600;
+}
+.tag-unans { background: #fef3c7; color: #92400e; }
+
+.question-text {
+  font-size: 20px;
+  line-height: 1.5;
+  margin: 0 0 16px;
+  font-weight: 700;
+  color: #112d29;
+}
+.content { white-space: pre-wrap; overflow-wrap: anywhere; }
+
+.section-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #31534b;
+  margin: 18px 0 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.answer-box {
+  background: #f4f9f7;
+  border-left: 4px solid #4a917e;
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  padding: 14px 16px;
+  margin: 8px 0 16px;
+  font-size: 14px;
+}
+
+.evidence-list { display: flex; flex-direction: column; gap: 10px; margin-bottom: 20px; }
+.evidence-card {
+  border: 1px solid var(--border-color);
+  background: #fafcfb;
+  border-radius: var(--radius-md);
+  padding: 12px 14px;
+  font-size: 13px;
+}
+.evidence-source {
+  font-size: 12px;
+  color: var(--text-muted);
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+/* Scoring Rubric Area */
+.rubric-box {
+  background: #ffffff;
+  border: 2px solid #ccdcd5;
+  border-radius: var(--radius-lg);
+  padding: 18px 20px;
+  margin-top: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+}
+.rubric-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border-color);
+}
+.rubric-header h2 { margin: 0; font-size: 18px; color: var(--primary); }
+.score-summary-badge {
+  background: var(--primary-subtle);
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.rubric-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.rubric-row {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 10px 12px;
+  background: #f9fbfb;
+  border: 1px solid #e2ece8;
+  border-radius: var(--radius-md);
+}
+.rubric-row-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.dim-title { font-weight: 700; font-size: 14px; color: #1e3d36; }
+.dim-desc { font-size: 12px; color: var(--text-muted); }
+
+.pill-group {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 8px;
+  margin-top: 4px;
+}
+.pill-btn {
+  background: white;
+  border: 1.5px solid #c9dad4;
+  border-radius: var(--radius-sm);
+  padding: 8px 10px;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  transition: all 0.15s ease;
+  user-select: none;
+}
+.pill-btn:hover { border-color: var(--primary); background: #f0f8f5; }
+.pill-btn.active-2 {
+  background: var(--score-2-bg);
+  border-color: var(--score-2);
+  box-shadow: 0 0 0 1px var(--score-2);
+}
+.pill-btn.active-1 {
+  background: var(--score-1-bg);
+  border-color: var(--score-1);
+  box-shadow: 0 0 0 1px var(--score-1);
+}
+.pill-btn.active-0 {
+  background: var(--score-0-bg);
+  border-color: var(--score-0);
+  box-shadow: 0 0 0 1px var(--score-0);
+}
+.pill-btn.active-crit-yes {
+  background: var(--danger-bg);
+  border-color: var(--danger-border);
+  box-shadow: 0 0 0 1px var(--danger-border);
+}
+.pill-btn.active-crit-no {
+  background: var(--score-2-bg);
+  border-color: var(--score-2);
+  box-shadow: 0 0 0 1px var(--score-2);
+}
+
+.pill-score { font-size: 13px; font-weight: 700; }
+.pill-text { font-size: 11px; color: #4b635d; line-height: 1.35; }
+
+.critical-box {
+  background: #fff8f8;
+  border: 1.5px solid #fecaca;
+  border-radius: var(--radius-md);
+  padding: 12px 14px;
+  margin-top: 10px;
+}
+.critical-box .dim-title { color: #991b1b; }
+
+.notes-area {
+  margin-top: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.notes-area label { font-size: 13px; font-weight: 600; color: #2a4c45; }
+.notes-area textarea {
+  width: 100%;
+  min-height: 64px;
+  padding: 8px 10px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+  font-family: inherit;
+  resize: vertical;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border-color);
+}
+
+@media(max-width: 960px) {
+  main { grid-template-columns: 1fr; }
+  aside { position: static; max-height: none; }
+  .question-list { max-height: 220px; }
+  .pill-group { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-top">
+    <div>
+      <div class="eyebrow">CLINICAL RAG EVALUATION SYSTEM</div>
+      <h1>癲癇 RAG 題庫 · 醫師人工評分系統</h1>
+      <p>採用 0/1/2 分級 Rubric、拒答題（Unanswerable）專屬分流與致命錯誤（Critical Error）安全警示</p>
+    </div>
+  </div>
+</header>
+
+<div class="toolbar">
+  <div class="reviewer-box">
+    <label for="reviewer">審查醫師／代號：</label>
+    <input id="reviewer" placeholder="請輸入姓名或代號" autocomplete="off">
+    <span class="save-status" id="saveStatus" role="status"></span>
+  </div>
+  <div class="tool-actions">
+    <button id="btnJson" class="primary">匯出完整評分 JSON</button>
+    <button id="btnCsv">匯出 Excel 評分表 (CSV)</button>
+    <label class="filebutton">匯入評分紀錄<input id="importFile" type="file" accept=".json,application/json"></label>
+  </div>
+</div>
+
+<main>
+  <!-- Sidebar -->
+  <aside class="panel">
+    <div class="dash-card">
+      <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:6px;">
+        <h3 style="margin:0;">評分進度</h3>
+        <strong id="progText" style="color:var(--primary); font-size:14px;">0 / 100</strong>
+      </div>
+      <progress id="progressBar" max="100" value="0" style="width:100%; height:8px; accent-color:var(--primary);"></progress>
+      
+      <h3 style="margin:12px 0 6px;">即時指標統計</h3>
+      <div class="metrics-grid">
+        <div class="metric-item">
+          <div class="metric-label">正確性 (可回答)</div>
+          <div id="mCorrectness" class="metric-val">-</div>
+        </div>
+        <div class="metric-item">
+          <div class="metric-label">證據一致性 (忠實度)</div>
+          <div id="mFaithfulness" class="metric-val">-</div>
+        </div>
+        <div class="metric-item">
+          <div class="metric-label">問題相關性</div>
+          <div id="mRelevance" class="metric-val">-</div>
+        </div>
+        <div class="metric-item">
+          <div class="metric-label">完整性 (可回答)</div>
+          <div id="mCompleteness" class="metric-val">-</div>
+        </div>
+        <div class="metric-item">
+          <div class="metric-label">拒答準確率 (拒答題)</div>
+          <div id="mAbstention" class="metric-val">-</div>
+        </div>
+        <div class="metric-item">
+          <div class="metric-label">致命錯誤率</div>
+          <div id="mCritical" class="metric-val danger">-</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="filters">
+      <input id="search" type="search" placeholder="搜尋題目、答案、證據或備註...">
+      <div style="display:grid; grid-template-columns: 1fr 1fr; gap:6px;">
+        <select id="typeFilter">
+          <option value="">全部題型 (100)</option>
+        </select>
+        <select id="statusFilter">
+          <option value="">全部狀態</option>
+          <option value="pending">未評分</option>
+          <option value="completed">已完成</option>
+          <option value="critical">含致命錯誤</option>
+        </select>
+      </div>
+    </div>
+
+    <div id="matchCount" style="font-size:12px; color:var(--text-muted);"></div>
+    <div id="questionList" class="question-list" role="listbox"></div>
+  </aside>
+
+  <!-- Detail Panel -->
+  <section id="detailPanel" class="panel"></section>
+</main>
+
+<script id="dataset" type="application/json">__DATASET__</script>
+<script>
+'use strict';
+const DATA = JSON.parse(document.getElementById('dataset').textContent);
+const fingerprint = '__FINGERPRINT__';
+const storageKey = 'clinical-rag-rubric-v2-main';
+
+const typeNames = {
+  factual: '事實題',
+  natural_query: '自然語句題',
+  comparison: '比較題',
+  reasoning: '推理題',
+  unanswerable: '不可回答題'
+};
+
+const rubricCriteria = {
+  correctness: {
+    title: '正確性 Correctness',
+    desc: '回答的核心醫學事實是否與標準答案一致無誤',
+    options: [
+      { score: '2', title: '2 分（完全正確）', text: '核心內容正確且完整，無事實錯誤' },
+      { score: '1', title: '1 分（部分正確）', text: '部分正確，但有次要遺漏或小部分錯誤' },
+      { score: '0', title: '0 分（核心錯誤）', text: '核心答案錯誤或與標準答案矛盾' }
+    ]
+  },
+  faithfulness: {
+    title: '證據一致性 Faithfulness',
+    desc: '回答之敘述是否完全由檢索之參考證據 (Evidence) 支持，有無捏造幻覺',
+    options: [
+      { score: '2', title: '2 分（完全支持）', text: '所有重要敘述皆有 retrieved evidence 支持' },
+      { score: '1', title: '1 分（大致有據）', text: '大致有依據，但有少量無法由 evidence 支持的敘述' },
+      { score: '0', title: '0 分（明顯幻覺）', text: '有明顯無文件依據或與證據矛盾之內容' }
+    ]
+  },
+  relevance: {
+    title: '問題相關性 Relevance',
+    desc: '回答是否精準切題、無大量離題或冗餘廢話',
+    options: [
+      { score: '2', title: '2 分（精準切題）', text: '直接回答問題核心且內容緊密相關' },
+      { score: '1', title: '1 分（部分相關）', text: '有回答，但包含大量無關資訊或不夠直接' },
+      { score: '0', title: '0 分（離題/未答）', text: '沒有回答問題或嚴重離題' }
+    ]
+  },
+  completeness: {
+    title: '完整性 Completeness',
+    desc: '問題所要求之要點是否皆有涵蓋',
+    options: [
+      { score: '2', title: '2 分（重點齊全）', text: '問題要求的重點皆有回答' },
+      { score: '1', title: '1 分（部分缺漏）', text: '回答部分要求，但缺少重要資訊' },
+      { score: '0', title: '0 分（嚴重缺漏）', text: '大部分必要資訊缺失' }
+    ]
+  },
+  abstention: {
+    title: '拒答判定 Abstention / Refusal (拒答題專用)',
+    desc: '針對證據不足題，模型是否誠實表明無法回答而非捏造結論',
+    options: [
+      { score: '2', title: '2 分（正確拒答）', text: '正確指出證據不足，沒有自行補充結論' },
+      { score: '1', title: '1 分（含糊推測）', text: '有表達不確定，但仍加入部分文件無法支持的推測' },
+      { score: '0', title: '0 分（錯誤強答）', text: '在證據不足情況下給出明確答案或捏造資訊' }
+    ]
+  }
+};
+
+const blankReview = (isAnswerable) => ({
+  correctness: '',
+  faithfulness: '',
+  relevance: '',
+  completeness: '',
+  abstention: '',
+  critical_error: 'no',
+  notes: '',
+  updated_at: ''
+});
+
+let state = {
+  reviewer: '',
+  reviews: {}
+};
+
+let activeId = DATA[0].id;
+let storageOK = true;
+
+const $ = (id) => document.getElementById(id);
+const esc = (s) => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+
+// Keep records for IDs absent from this version, so restoring a question restores its review.
+function validateState(raw) {
+  const isObject = value => value !== null && typeof value === 'object' && !Array.isArray(value);
+  if (!isObject(raw) || !isObject(raw.reviews) ||
+      (raw.reviewer !== undefined && typeof raw.reviewer !== 'string')) {
+    throw new Error('資料格式不正確：需要 reviews 評分紀錄物件');
+  }
+  const clean = { reviewer: raw.reviewer || '', reviews: {} };
+  for (const [id, r] of Object.entries(raw.reviews)) {
+    if (!/^[1-9]\d*$/.test(id) || !isObject(r)) throw new Error('題號或評分紀錄格式不正確');
+    // Preserve original v1 checklist/suggestions without converting them into rubric scores.
+    const item = { ...r, ...blankReview() };
+    for (const field of ['correctness', 'faithfulness', 'relevance', 'completeness', 'abstention']) {
+      if (r[field] !== undefined && !['', '0', '1', '2'].includes(String(r[field]))) {
+        throw new Error('評分欄位格式不正確：' + field);
+      }
+      item[field] = r[field] === undefined ? '' : String(r[field]);
+    }
+    item.critical_error = r.critical_error === 'yes' ? 'yes' : 'no';
+    item.notes = String(r.notes ?? r.review_notes ?? '');
+    item.updated_at = String(r.updated_at || '');
+    clean.reviews[id] = item;
+  }
+  return clean;
+}
+
+// Whole-record conflicts use the latest timestamp; equal/unknown timestamps keep current work.
+function mergeStates(current, incoming) {
+  const reviews = { ...current.reviews };
+  for (const [id, review] of Object.entries(incoming.reviews)) {
+    const previous = reviews[id];
+    if (!previous || (Date.parse(review.updated_at) || 0) > (Date.parse(previous.updated_at) || 0)) {
+      reviews[id] = review;
+    }
+  }
+  return { reviewer: current.reviewer || incoming.reviewer, reviews };
+}
+
+let loadWarning = '';
+try {
+  const saved = localStorage.getItem(storageKey);
+  let loaded = false;
+  if (saved !== null) {
+    try {
+      state = validateState(JSON.parse(saved));
+      loaded = true;
+    } catch (_) {
+      loadWarning = '既有暫存格式損壞，尚未覆寫；請先保留備份或匯入有效 JSON。';
+    }
+  }
+  if (!loaded) {
+    const keys = [];
+    for (let i = 0; i < localStorage.length; i++) {
+      const key = localStorage.key(i);
+      if (key !== storageKey && (key.startsWith('clinical-rag-rubric-v2-') || key.startsWith('clinical-review-v1-'))) {
+        keys.push(key);
+      }
+    }
+    for (const key of keys.sort()) {
+      try {
+        state = mergeStates(state, validateState(JSON.parse(localStorage.getItem(key))));
+      } catch (_) {
+        loadWarning = '部分舊版暫存無法讀取，原始紀錄仍保留；請檢查 JSON 備份。';
+      }
+    }
+    if (saved === null && keys.length && !loadWarning) {
+      localStorage.setItem(storageKey, JSON.stringify(state));
+    }
+  }
+} catch (e) {
+  console.warn('Storage read error:', e);
+  storageOK = false;
+}
+$('saveStatus').textContent = !storageOK
+  ? '無法讀取瀏覽器暫存，請匯出 JSON 保存本次紀錄。'
+  : loadWarning || '本機暫存已載入；評分與輸入會即時自動保存。';
+
+function persist() {
+  try {
+    localStorage.setItem(storageKey, JSON.stringify(state));
+    storageOK = true;
+    $('saveStatus').textContent = '已自動暫存於此瀏覽器 · ' + new Date().toLocaleTimeString('zh-TW');
+    return true;
+  } catch (e) {
+    storageOK = false;
+    $('saveStatus').textContent = '瀏覽器暫存失敗，請及時匯出 JSON 備份。';
+    return false;
+  }
+}
+
+function isComplete(q) {
+  const r = state.reviews[q.id];
+  if (!r) return false;
+  if (q.answerable) {
+    return r.correctness !== '' && r.faithfulness !== '' && r.relevance !== '' && r.completeness !== '';
+  } else {
+    return r.abstention !== '' && r.faithfulness !== '' && r.relevance !== '';
+  }
+}
+
+function getItemScore(q) {
+  const r = state.reviews[q.id];
+  if (!r) return { score: 0, max: q.answerable ? 8 : 6, completed: false };
+  if (q.answerable) {
+    const ready = r.correctness !== '' && r.faithfulness !== '' && r.relevance !== '' && r.completeness !== '';
+    const score = (Number(r.correctness) || 0) + (Number(r.faithfulness) || 0) + (Number(r.relevance) || 0) + (Number(r.completeness) || 0);
+    return { score, max: 8, completed: ready };
+  } else {
+    const ready = r.abstention !== '' && r.faithfulness !== '' && r.relevance !== '';
+    const score = (Number(r.abstention) || 0) + (Number(r.faithfulness) || 0) + (Number(r.relevance) || 0);
+    return { score, max: 6, completed: ready };
+  }
+}
+
+function calculateMetrics() {
+  let completedTotal = 0;
+  let ansCount = 0;
+  let unansCount = 0;
+  let sumCorr = 0, sumFaith = 0, sumRel = 0, sumComp = 0;
+  let unansAbstain2Count = 0;
+  let critCount = 0;
+
+  for (const q of DATA) {
+    const r = state.reviews[q.id];
+    if (!r) continue;
+    const done = isComplete(q);
+    if (!done) continue;
+    
+    completedTotal++;
+    if (r.critical_error === 'yes') critCount++;
+
+    sumFaith += Number(r.faithfulness) || 0;
+    sumRel += Number(r.relevance) || 0;
+
+    if (q.answerable) {
+      ansCount++;
+      sumCorr += Number(r.correctness) || 0;
+      sumComp += Number(r.completeness) || 0;
+    } else {
+      unansCount++;
+      if (r.abstention === '2') unansAbstain2Count++;
+    }
+  }
+
+  return {
+    completedTotal,
+    ansCount,
+    unansCount,
+    avgCorr: ansCount > 0 ? (sumCorr / ansCount).toFixed(2) : '-',
+    avgFaith: completedTotal > 0 ? (sumFaith / completedTotal).toFixed(2) : '-',
+    avgRel: completedTotal > 0 ? (sumRel / completedTotal).toFixed(2) : '-',
+    avgComp: ansCount > 0 ? (sumComp / ansCount).toFixed(2) : '-',
+    abstentionAcc: unansCount > 0 ? ((unansAbstain2Count / unansCount) * 100).toFixed(1) + '%' : '-',
+    critRate: completedTotal > 0 ? ((critCount / completedTotal) * 100).toFixed(1) + `% (${critCount}題)` : '-'
+  };
+}
+
+function updateMetricsUI() {
+  const m = calculateMetrics();
+  $('progText').textContent = `${m.completedTotal} / ${DATA.length}`;
+  $('progressBar').max = DATA.length;
+  $('progressBar').value = m.completedTotal;
+  
+  $('mCorrectness').textContent = m.avgCorr !== '-' ? `${m.avgCorr} / 2` : '-';
+  $('mFaithfulness').textContent = m.avgFaith !== '-' ? `${m.avgFaith} / 2` : '-';
+  $('mRelevance').textContent = m.avgRel !== '-' ? `${m.avgRel} / 2` : '-';
+  $('mCompleteness').textContent = m.avgComp !== '-' ? `${m.avgComp} / 2` : '-';
+  $('mAbstention').textContent = m.abstentionAcc;
+  $('mCritical').textContent = m.critRate;
+}
+
+function getVisibleQuestions() {
+  const query = $('search').value.trim().toLowerCase();
+  const typeVal = $('typeFilter').value;
+  const statusVal = $('statusFilter').value;
+
+  return DATA.filter(q => {
+    if (typeVal && q.type !== typeVal) return false;
+    const r = state.reviews[q.id];
+    const completed = isComplete(q);
+    
+    if (statusVal === 'pending' && completed) return false;
+    if (statusVal === 'completed' && !completed) return false;
+    if (statusVal === 'critical' && (!r || r.critical_error !== 'yes')) return false;
+
+    if (query) {
+      const textMatch = q.question.toLowerCase().includes(query) ||
+        q.reference_answer.toLowerCase().includes(query) ||
+        String(q.id) === query ||
+        (r?.notes && r.notes.toLowerCase().includes(query)) ||
+        q.evidence.some(e => e.text.toLowerCase().includes(query));
+      if (!textMatch) return false;
+    }
+    return true;
+  });
+}
+
+function renderSidebar() {
+  updateMetricsUI();
+  const visible = getVisibleQuestions();
+  $('matchCount').textContent = `符合條件：${visible.length} 題 / 共 ${DATA.length} 題`;
+
+  $('questionList').innerHTML = visible.map(q => {
+    const r = state.reviews[q.id];
+    const { score, max, completed } = getItemScore(q);
+    const isCrit = r?.critical_error === 'yes';
+
+    let badgeHtml = '';
+    if (isCrit) {
+      badgeHtml += `<span class="badge badge-critical">致命錯誤</span>`;
+    }
+    if (completed) {
+      badgeHtml += `<span class="badge badge-done">${score}/${max}分</span>`;
+    } else {
+      badgeHtml += `<span class="badge badge-pending">未完成</span>`;
+    }
+
+    return `
+      <div class="question-item" data-id="${q.id}" aria-current="${q.id === activeId}">
+        <div class="q-header">
+          <span class="q-num">#${String(q.id).padStart(3, '0')} · ${typeNames[q.type] || q.type}</span>
+          <div class="q-badges">${badgeHtml}</div>
+        </div>
+        <div class="q-title">${esc(q.question)}</div>
+      </div>
+    `;
+  }).join('');
+
+  $('questionList').querySelectorAll('.question-item').forEach(el => {
+    el.onclick = () => {
+      activeId = Number(el.dataset.id);
+      render();
+    };
+  });
+}
+
+function renderDetail() {
+  const q = DATA.find(item => item.id === activeId);
+  if (!q) {
+    $('detailPanel').innerHTML = `<div style="text-align:center; padding:60px 20px; color:var(--text-muted);">請調整搜尋篩選條件以檢視題目。</div>`;
+    return;
+  }
+
+  const r = state.reviews[q.id] || blankReview(q.answerable);
+  const { score, max, completed } = getItemScore(q);
+
+  let rubricFields = [];
+  if (q.answerable) {
+    rubricFields = ['correctness', 'faithfulness', 'relevance', 'completeness'];
+  } else {
+    rubricFields = ['abstention', 'faithfulness', 'relevance'];
+  }
+
+  const rubricRowsHtml = rubricFields.map(fieldKey => {
+    const meta = rubricCriteria[fieldKey];
+    const currentVal = r[fieldKey] || '';
+    
+    const optionsHtml = meta.options.map(opt => {
+      const isActive = currentVal === opt.score;
+      const activeClass = isActive ? `active-${opt.score}` : '';
+      return `
+        <div class="pill-btn ${activeClass}" data-field="${fieldKey}" data-value="${opt.score}">
+          <div class="pill-score">${opt.title}</div>
+          <div class="pill-text">${opt.text}</div>
+        </div>
+      `;
+    }).join('');
+
+    return `
+      <div class="rubric-row">
+        <div class="rubric-row-header">
+          <span class="dim-title">${meta.title}</span>
+          <span class="dim-desc">${meta.desc}</span>
+        </div>
+        <div class="pill-group">${optionsHtml}</div>
+      </div>
+    `;
+  }).join('');
+
+  const isCritYes = r.critical_error === 'yes';
+
+  $('detailPanel').innerHTML = `
+    <div class="meta-tags">
+      <span class="tag">題目 ${q.id} / ${DATA.length}</span>
+      <span class="tag tag-type">${typeNames[q.type] || q.type}</span>
+      <span class="tag ${q.answerable ? '' : 'tag-unans'}">${q.answerable ? '可回答題' : '不可回答題 (拒答題)'}</span>
+      <span class="tag">${q.multi_source ? '多來源證據' : '單一來源證據'}</span>
+    </div>
+
+    <h2 class="question-text content">${esc(q.question)}</h2>
+
+    <div class="section-title">
+      <span>標準參考答案 (Reference Answer)</span>
+    </div>
+    <div class="answer-box content">${esc(q.reference_answer)}</div>
+
+    <div class="section-title">
+      <span>引用證據 (Retrieved Evidence) · ${q.evidence.length} 筆</span>
+      <span style="font-size:12px; font-weight:400; color:var(--text-muted);">核對答案與證據是否一致</span>
+    </div>
+    <div class="evidence-list">
+      ${q.evidence.length ? q.evidence.map((ev, i) => `
+        <div class="evidence-card">
+          <div class="evidence-source">證據 ${i + 1}：${esc(ev.source)} 【${esc(ev.location)}】</div>
+          <div class="content" style="color:#2c443e;">${esc(ev.text)}</div>
+        </div>
+      `).join('') : '<div style="color:var(--text-muted); font-size:13px;">此題未提供引用證據。</div>'}
+    </div>
+
+    <!-- Rubric Rating Area -->
+    <div class="rubric-box">
+      <div class="rubric-header">
+        <div>
+          <h2>醫師審查評分 (0-2 Rubric)</h2>
+          <div style="font-size:12px; color:var(--text-muted); margin-top:2px;">
+            ${q.answerable ? '點選各維度分段按鈕評分（滿分 8 分）' : '此題為不可回答題，評估拒答精準度與證據一致性（滿分 6 分）'}
+          </div>
+        </div>
+        <div class="score-summary-badge">
+          得分：${completed ? `${score} / ${max} 分` : `評分中 (${score}/${max})`}
+        </div>
+      </div>
+
+      <div class="rubric-grid">
+        ${rubricRowsHtml}
+
+        <!-- Critical Error Row -->
+        <div class="critical-box">
+          <div class="rubric-row-header">
+            <span class="dim-title" style="display:flex; align-items:center; gap:6px;">
+              ⚠️ 致命錯誤 (Critical Error Safety Gate)
+            </span>
+            <span class="dim-desc" style="color:#7f1d1d;">
+              是否包含實質改變原文件醫療意義的危險錯誤（如錯誤藥物、錯誤禁忌、劑量大小錯誤、或證據不足時斷言醫療結論）
+            </span>
+          </div>
+          <div class="pill-group" style="grid-template-columns: 1fr 1fr; margin-top:8px;">
+            <div class="pill-btn ${!isCritYes ? 'active-crit-no' : ''}" data-field="critical_error" data-value="no">
+              <div class="pill-score" style="color:#166534;">No · 無致命錯誤</div>
+              <div class="pill-text">內容安全，無實質危害病患或嚴重扭曲醫學指引的重大錯誤</div>
+            </div>
+            <div class="pill-btn ${isCritYes ? 'active-crit-yes' : ''}" data-field="critical_error" data-value="yes">
+              <div class="pill-score" style="color:#991b1b;">Yes · 存在致命錯誤</div>
+              <div class="pill-text">包含危險劑量、相反禁忌、藥物混淆或捏造醫學處方</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Notes Area -->
+        <div class="notes-area">
+          <label for="notesInput">審查備註／修改建議／意見（選填）：</label>
+          <textarea id="notesInput" placeholder="例如：漏列一項、劑量錯誤、需補充某指引頁碼等...">${esc(r.notes)}</textarea>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Navigation -->
+    <div class="nav-bar">
+      <button id="btnPrev">← 上一題</button>
+      <div style="display:flex; gap:8px;">
+        <button id="btnNextPending" style="background:#e8f4f0; border-color:#206d59; color:#206d59;">下一個未完成題</button>
+        <button id="btnNext" class="primary">下一題 →</button>
+      </div>
+    </div>
+  `;
+
+  // Bind Rubric Pill Buttons
+  $('detailPanel').querySelectorAll('.pill-btn').forEach(btn => {
+    btn.onclick = () => {
+      const field = btn.dataset.field;
+      const value = btn.dataset.value;
+      const rev = state.reviews[activeId] || blankReview(q.answerable);
+      rev[field] = value;
+      rev.updated_at = new Date().toISOString();
+      state.reviews[activeId] = rev;
+      persist();
+      render();
+    };
+  });
+
+  // Bind Notes
+  $('notesInput').oninput = (e) => {
+    const rev = state.reviews[activeId] || blankReview(q.answerable);
+    rev.notes = e.target.value;
+    rev.updated_at = new Date().toISOString();
+    state.reviews[activeId] = rev;
+    persist();
+    renderSidebar();
+  };
+
+  // Navigation Logic
+  const visible = getVisibleQuestions();
+  const curIdx = visible.findIndex(item => item.id === activeId);
+
+  $('btnPrev').disabled = curIdx <= 0;
+  $('btnNext').disabled = curIdx < 0 || curIdx >= visible.length - 1;
+
+  $('btnPrev').onclick = () => {
+    if (curIdx > 0) {
+      activeId = visible[curIdx - 1].id;
+      render();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  };
+
+  $('btnNext').onclick = () => {
+    if (curIdx < visible.length - 1) {
+      activeId = visible[curIdx + 1].id;
+      render();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  };
+
+  $('btnNextPending').onclick = () => {
+    const startIdx = DATA.findIndex(item => item.id === activeId);
+    const reordered = [...DATA.slice(startIdx + 1), ...DATA.slice(0, startIdx + 1)];
+    const target = reordered.find(item => !isComplete(item));
+    if (target) {
+      $('search').value = '';
+      $('typeFilter').value = '';
+      $('statusFilter').value = '';
+      activeId = target.id;
+      render();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+      alert(`恭喜！所有 ${DATA.length} 題皆已評分完成！`);
+    }
+  };
+}
+
+function render() {
+  renderSidebar();
+  renderDetail();
+}
+
+// Populate Type Filter Options
+for (const [val, label] of Object.entries(typeNames)) {
+  const count = DATA.filter(q => q.type === val).length;
+  $('typeFilter').add(new Option(`${label} (${count})`, val));
+}
+
+// Event Listeners for Filters & Reviewer
+$('reviewer').value = state.reviewer;
+$('reviewer').oninput = () => {
+  state.reviewer = $('reviewer').value;
+  persist();
+};
+
+$('search').oninput = () => renderSidebar();
+$('typeFilter').onchange = () => {
+  const visible = getVisibleQuestions();
+  if (!visible.some(q => q.id === activeId) && visible.length > 0) {
+    activeId = visible[0].id;
+  }
+  render();
+};
+$('statusFilter').onchange = () => {
+  const visible = getVisibleQuestions();
+  if (!visible.some(q => q.id === activeId) && visible.length > 0) {
+    activeId = visible[0].id;
+  }
+  render();
+};
+
+// Keyboard Shortcuts
+window.addEventListener('keydown', (e) => {
+  if (['TEXTAREA', 'INPUT', 'SELECT'].includes(document.activeElement?.tagName)) return;
+  if (e.key === 'ArrowLeft') $('btnPrev')?.click();
+  if (e.key === 'ArrowRight') $('btnNext')?.click();
+  if (e.key.toLowerCase() === 'n') $('btnNextPending')?.click();
+});
+
+// JSON Export
+$('btnJson').onclick = () => {
+  const payload = {
+    schema_version: 2,
+    rubric_version: '0_1_2_medical_v2',
+    dataset_fingerprint: fingerprint,
+    dataset_file: 'rag_evaluation_dataset_100.json',
+    exported_at: new Date().toISOString(),
+    reviewer: state.reviewer,
+    summary_metrics: calculateMetrics(),
+    reviews: state.reviews,
+    items: DATA.map(q => {
+      const r = state.reviews[q.id] || blankReview(q.answerable);
+      const { score, max, completed } = getItemScore(q);
+      return {
+        ...q,
+        review: {
+          ...r,
+          total_score: score,
+          max_score: max,
+          is_completed: completed
+        }
+      };
+    })
+  };
+  const name = 'rag_eval_rubric_' + (state.reviewer.trim() || 'anonymous').replace(/[^\p{L}\p{N}_-]/gu, '_') + '_' + new Date().toISOString().replace(/[:.]/g, '-') + '.json';
+  downloadFile(JSON.stringify(payload, null, 2), name, 'application/json;charset=utf-8');
+};
+
+// CSV Export
+function csvEscape(val) {
+  let s = String(val ?? '');
+  if (/^[\s]*[=+@-]/.test(s) || /^[\t\r\n]/.test(s)) s = "'" + s;
+  return '"' + s.replace(/"/g, '""') + '"';
+}
+
+$('btnCsv').onclick = () => {
+  const headers = [
+    'ID', 'Type', 'Answerable', 'Question', 'Reference_Answer',
+    'Correctness', 'Faithfulness', 'Relevance', 'Completeness', 'Abstention',
+    'Total_Score', 'Max_Score', 'Critical_Error', 'Notes', 'Reviewer', 'Updated_At'
+  ];
+
+  const rows = [headers];
+  for (const q of DATA) {
+    const r = state.reviews[q.id] || blankReview(q.answerable);
+    const { score, max, completed } = getItemScore(q);
+    rows.push([
+      q.id,
+      typeNames[q.type] || q.type,
+      q.answerable ? '可回答' : '不可回答(拒答題)',
+      q.question,
+      q.reference_answer,
+      r.correctness !== '' ? r.correctness : 'N/A',
+      r.faithfulness !== '' ? r.faithfulness : 'N/A',
+      r.relevance !== '' ? r.relevance : 'N/A',
+      r.completeness !== '' ? r.completeness : 'N/A',
+      r.abstention !== '' ? r.abstention : 'N/A',
+      completed ? score : '未完成',
+      max,
+      r.critical_error === 'yes' ? 'Yes' : 'No',
+      r.notes,
+      state.reviewer,
+      r.updated_at
+    ]);
+  }
+
+  const csvContent = '\uFEFF' + rows.map(r => r.map(csvEscape).join(',')).join('\r\n');
+  const name = 'rag_eval_summary_' + (state.reviewer.trim() || 'anonymous').replace(/[^\p{L}\p{N}_-]/gu, '_') + '_' + new Date().toISOString().replace(/[:.]/g, '-') + '.csv';
+  downloadFile(csvContent, name, 'text/csv;charset=utf-8');
+};
+
+// JSON Import
+$('importFile').onchange = async (e) => {
+  const file = e.target.files[0];
+  if (!file) return;
+  try {
+    const raw = JSON.parse(await file.text());
+    const validated = validateState(raw);
+    let promptMsg = '確定合併評分紀錄？未包含的題目會保留；同題保留更新時間較新的整筆紀錄（同時間保留目前紀錄），現有審查者姓名不變。';
+    if (raw.dataset_fingerprint && raw.dataset_fingerprint !== fingerprint) {
+      promptMsg = '此備份檔的題庫版本與目前不同，將依題號 (ID) 合併。\n\n' + promptMsg;
+    }
+    if (!confirm(promptMsg)) return;
+    state = mergeStates(state, validated);
+    $('reviewer').value = state.reviewer;
+    const saved = persist();
+    render();
+    alert(saved ? '評分紀錄匯入成功！已依題號完成合併還原。' : '紀錄已合併，但瀏覽器暫存失敗；請立即匯出 JSON 備份。');
+  } catch (err) {
+    alert('匯入失敗：' + err.message);
+  } finally {
+    e.target.value = '';
+  }
+};
+
+function downloadFile(content, fileName, mimeType) {
+  const blob = new Blob([content], { type: mimeType });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = fileName;
+  document.body.appendChild(a);
+  a.click();
+  setTimeout(() => {
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  }, 500);
+}
+
+// Initial render
+render();
+</script>
+</body>
+</html>
